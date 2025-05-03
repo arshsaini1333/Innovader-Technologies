@@ -1,0 +1,149 @@
+.Navbar {
+    background-color: white !important;
+    color: #1b70ef;
+    padding: 0.7rem 0;
+}
+
+.nav-links {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    transition: 0.5s all ease;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 4px;
+    display: inline-block;
+    /* border: 1px solid red; */
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    color: #1b70ef !important;
+}
+
+.nav-links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #1b70ef;
+    transition: width 0.5s ease-in-out;
+}
+
+.css-rizt0-MuiTypography-root {
+    font-size: 1.2rem !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+}
+
+.css-1ygil4i-MuiToolbar-root {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.nav-links:hover::after {
+    width: 100%;
+}
+
+img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.nav-link-container {
+    display: flex !important;
+    justify-content: center !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    width: 70%;
+    gap: 1.5rem;
+}
+
+.banner {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* gap: 0.5rem; */
+    margin-right: 5rem !important;
+}
+
+.banner p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem !important;
+    font-weight: bold;
+    margin-top: 0.35rem;
+    color: #1b70ef;
+}
+
+.banner-d {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.d-btn {
+    color: #1b70ef !important;
+}
+
+.banner-d p {
+    padding: 0;
+    font-size: 1.3rem !important;
+    font-weight: bold;
+    margin-top: 0.35rem !important;
+    color: #1b70ef;
+    width: 100%;
+}
+
+.letsTalk {
+    text-decoration: none;
+    font-size: 1.2rem !important;
+    background-color: rgb(27, 113, 235) !important;
+    color: white !important;
+    border: 2px solid #1b70ef;
+    border-radius: 2rem !important;
+    transition: 0.5s ease-in-out;
+    padding: 0.3rem 1.2rem !important;
+    margin-left: 5rem;
+}
+
+.letsTalk:hover {
+    border: 2px solid #1b70ef !important;
+    color: #1b70ef !important;
+    background-color: white !important;
+}
+
+@media screen and (max-width:600px) {
+    .banner {
+        display: none !important;
+    }
+    .nav-link-container {
+        display: none !important;
+        justify-content: baseline;
+        align-items: flex-start;
+    }
+    .nav-links:hover::after {
+        width: 40%;
+    }
+    .li-container {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 0rem !important;
+    }
+    .letsTalk {
+        margin-left: 0rem;
+        margin-top: 1rem !important;
+    }
+    .css-1ygil4i-MuiToolbar-root {
+        padding-left: 1rem !important;
+        padding-right: 0 !important;
+    }
+}
