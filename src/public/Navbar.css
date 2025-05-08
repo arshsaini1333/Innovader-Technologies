@@ -50,7 +50,6 @@
 }
 
 img {
-    height: 4rem;
     width: 4rem;
 }
 
@@ -117,6 +116,16 @@ img {
     border: 2px solid #1b70ef !important;
     color: #1b70ef !important;
     background-color: white !important;
+}
+
+@media screen and (max-width:1100px) {
+    .nav-link-container {
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .letsTalk {
+        margin-left: 3rem;
+    }
 }
 
 @media screen and (max-width:600px) {
