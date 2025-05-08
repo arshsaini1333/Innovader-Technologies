@@ -1,6 +1,7 @@
 import '../public/Home.css';
 import animationData from '../assets/animation.json';
 import Lottie from 'lottie-react';
+import {Link} from 'react-router-dom'
 // Importin images
 
 import logo1 from '../assets/seo.png'
@@ -71,7 +72,8 @@ export default function Services()
 
             </div>
             <div class="os-btn">
-                <a href="ourServices.html">Know More..</a>
+                <Link to='/our-services' className='link'>Know More..</Link>
+               
             </div>
         </div>
         <div id="lottie-animation" class="services-ani">
