@@ -54,14 +54,14 @@ const HomeRight = () => {
       <div className={`scroll-row ${direction}`}>
         <div className="scroll-inner">
           {images.map((img, i) => (
-            <div className='images'>
-                <img src={img} alt={`img-${i}`} key={i} />
+            <div className='images' key={i}>
+                <img src={img} alt={`img-${i}`}  />
             </div>
           ))}
           {/* Duplicate for infinite loop effect */}
           {images.map((img, i) => (
-            <div className='images'>
-             <img src={img} alt={`img-${i}-duplicate`} key={i + images.length} />
+            <div className='images' key={i + images.length}>
+             <img src={img} alt={`img-${i}-duplicate`}  />
             </div>
           ))}
         </div>
