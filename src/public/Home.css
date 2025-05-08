@@ -1,6 +1,6 @@
 .Home {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem 1rem;
     /* align-items: center; */
     height: 670px;
@@ -10,7 +10,7 @@
 }
 
 .HomeRight {
-    width: 43%;
+    width: 50%;
 }
 
 .scrolling-gallery {
@@ -24,7 +24,7 @@
     transform: rotate(18deg);
     position: relative;
     top: -5rem;
-    right: -10rem;
+    right: -8rem;
     background-color: rgba(235, 232, 232, 0.735);
     padding: 2rem;
 }
@@ -62,7 +62,7 @@
 .scroll-inner img {
     height: 10rem;
     object-fit: cover;
-    width: 10rem;
+    width: 15rem;
 }
 
 .heads1 {
@@ -97,7 +97,7 @@
 }
 
 .HomeLeft {
-    width: 50%;
+    width: 60%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -107,6 +107,7 @@
 }
 
 .HomeLeft .heading {
+    width: 100%;
     font-size: 3rem;
     /* color: #1b70ef; */
     color: #333;
