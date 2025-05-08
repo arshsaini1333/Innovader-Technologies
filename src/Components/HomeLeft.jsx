@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import '../public/Home.css';
-
+import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 const lines = [
   "Attract Qualified Buyers & Sellers",
   "Capture Interested Prospects",
@@ -16,7 +16,7 @@ const lineVariants = {
   exit: { x: 100, opacity: 0, transition: { duration: 0.8 } }
 };
 
-const HomeLeft = () => {
+function HomeLeft({popUp}){
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -44,6 +44,7 @@ const HomeLeft = () => {
           </motion.p>
         </AnimatePresence>
       </div>
+      <button onClick={()=>popUp()} className="enquire"> <PermPhoneMsgIcon style={{color:'#1b71eb'}}></PermPhoneMsgIcon> Enquire Now</button>
     </div>
   );
 };
