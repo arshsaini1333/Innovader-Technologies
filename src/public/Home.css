@@ -173,8 +173,8 @@
     }
     .scroll-inner img {
         /* height: 10rem; */
-        object-fit: cover;
-        width: 15rem !important;
+        object-fit: fill;
+        /* width: 10rem !important; */
     }
     .images {
         background-color: white;
