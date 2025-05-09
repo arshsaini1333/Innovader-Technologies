@@ -7,24 +7,29 @@
     overflow: hidden;
     /* border-bottom: 5px solid red; */
     height: 100vh;
+    box-sizing: border-box;
+    /* Make sure padding doesn't overflow */
 }
 
 .HomeRight {
     width: 50%;
+    /* height: 100vh; */
 }
 
 .scrolling-gallery {
     display: flex;
     /* flex-direction: column; */
     /* align-items: center; */
-    height: 910px;
+    height: 200%;
+    /* updated from 2000px */
+    box-sizing: border-box;
     justify-content: center;
     gap: 20px;
     overflow: hidden;
     transform: rotate(18deg);
     position: relative;
     top: -5rem;
-    right: -8rem;
+    right: -4rem;
     background-color: rgba(235, 232, 232, 0.735);
     padding: 2rem;
 }
@@ -40,7 +45,7 @@
 
 .scroll-row {
     overflow: hidden;
-    height: 100%;
+    height: 200%;
     position: relative;
 }
 
@@ -52,11 +57,11 @@
 }
 
 .scroll-row.up .scroll-inner {
-    animation: scroll-up 10s linear infinite;
+    animation: scroll-up 20s linear infinite;
 }
 
 .scroll-row.down .scroll-inner {
-    animation: scroll-down 10s linear infinite;
+    animation: scroll-down 20s linear infinite;
 }
 
 .scroll-inner img {
@@ -66,12 +71,12 @@
 }
 
 .heads1 {
-    background-color: pink;
+    background-color: rgba(245, 245, 83, 0.781);
     padding: 0 0.5rem;
 }
 
 .heads2 {
-    background-color: rgb(149, 240, 149);
+    background-color: #95F095;
     padding: 0 0.5rem;
 }
 
