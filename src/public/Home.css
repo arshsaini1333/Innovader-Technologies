@@ -17,7 +17,7 @@
     display: flex;
     /* flex-direction: column; */
     /* align-items: center; */
-    height: 900px;
+    height: 910px;
     justify-content: center;
     gap: 20px;
     overflow: hidden;
@@ -110,6 +110,7 @@
     font-size: 3rem;
     /* color: #1b70ef; */
     color: #333;
+    /* color: white; */
 }
 
 .HomeLeft .line-text {
@@ -192,12 +193,14 @@
 /* ----------Services------------ */
 
 .services {
+    padding: 2rem 0;
+    background-color: #1b70ef98;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 2rem;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    /* margin-top: 2rem; */
     margin-bottom: 3rem;
 }
 
@@ -216,13 +219,15 @@
 
 .services-content h2 {
     text-align: center;
-    color: #1b71eb;
+    /* color: #1b71eb; */
+    color: #1b70ef;
     font-weight: bolder;
     font-size: 3rem;
     width: 45%;
-    border-bottom: 4px solid #1b71eb;
+    /* border-bottom: 4px solid #1b71eb; */
+    background-color: white;
+    border: 4px solid white;
     border-radius: 5rem;
-    margin-bottom: 1rem;
 }
 
 .os-container {
@@ -268,8 +273,10 @@
 
 .os-btn .link {
     text-decoration: none;
-    background-color: #1b71eb;
-    color: white;
+    /* background-color: #1b71eb;
+    color: white; */
+    background-color: white;
+    color: #1b70ef;
     font-size: 1.1rem;
     font-weight: 600;
     padding: 0.7rem 1.5rem;
@@ -281,7 +288,7 @@
         flex-direction: column-reverse;
         gap: 0rem;
         margin-top: 0rem;
-        padding: 0 1.5rem;
+        padding: 2 1.5rem;
     }
     .services-content {
         width: 100%;
@@ -292,7 +299,7 @@
 
 @media screen and (max-width: 550px) {
     .services {
-        padding: 0;
+        padding: 2rem 0;
     }
     .services-ani {
         width: 60%;
@@ -350,7 +357,7 @@
 
 .popup-overlay {
     position: fixed;
-    top: 0;
+    top: 35px;
     left: 0;
     width: 100%;
     height: 100%;
