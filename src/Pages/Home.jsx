@@ -22,8 +22,9 @@ export default function Home()
         <HomeRight/>      
         </div>
         <Services />
-        <WantToSee/>
+        
         <OurClients/>
+        <WantToSee/>
         <Testimonial/>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>
