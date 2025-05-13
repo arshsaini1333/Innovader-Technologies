@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import '../public/Home.css';
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
+
+
 const lines = [
   "Attract Qualified Buyers & Sellers",
   "Capture Interested Prospects",
@@ -17,6 +22,12 @@ const lineVariants = {
 };
 
 function HomeLeft({popUp}){
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: false,     // Animation only happens once when scrolled into view
+    });
+  }, []);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -28,7 +39,7 @@ function HomeLeft({popUp}){
   }, [index]);
 
   return (
-    <div className="p-6 max-w-xl mx-auto text-center HomeLeft">
+    <div className="p-6 max-w-xl mx-auto text-center HomeLeft" data-aos="zoom-in">
       <h2 className="text-2xl font-bold mb-6 heading">The Journey from  <span className="heads1">Website Traffic</span>  to <span className="heads2">Real Leads</span> Starts Here</h2>
       <div className="h-10">
         <AnimatePresence mode="wait">

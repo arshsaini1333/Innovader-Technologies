@@ -1,7 +1,11 @@
 import '../public/Home.css';
 import animationData from '../assets/animation.json';
+import { useEffect } from 'react';
 import Lottie from 'lottie-react';
 import {Link} from 'react-router-dom'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 // Importin images
 
 import logo1 from '../assets/seo.png'
@@ -17,9 +21,15 @@ import logo10 from '../assets/social-media.png'
 
 export default function Services()
 {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration in ms
+          once: false,     
+        });
+      }, []);
     return(
         <div className="services">
-        <div className="services-content" data-aos="flip-left" data-aos-delay="200">
+        <div className="services-content" data-aos="zoom-in" data-aos-delay="200">
             <h2>Our Services</h2>
             <div className="os-container">
                 <div className="os-card">
@@ -76,7 +86,7 @@ export default function Services()
                
             </div>
         </div>
-        <div id="lottie-animation" className="services-ani">
+        <div id="lottie-animation" className="services-ani" data-aos="zoom-in">
         <Lottie animationData={animationData} loop={true} />
         </div>
 

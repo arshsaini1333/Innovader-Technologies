@@ -8,8 +8,11 @@ import WantToSee from '../Components/WantToSee.jsx'
 import Testimonial from '../Components/Testimonial.jsx'
 import Footer from '../Components/Footer.jsx'
 import { useState } from 'react'
+
+ 
 export default function Home()
 {
+    
     const [isShow, setShow] = useState(false);
     function popUp()
     {
@@ -19,8 +22,7 @@ export default function Home()
     return (
         <>
         <div className='Home'>
-        <HomeLeft popUp={popUp}/>  
-        <HomeRight/>      
+        <HomeLeft popUp={popUp} />      
         </div>
         <Services />
         
