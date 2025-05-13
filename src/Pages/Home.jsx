@@ -4,6 +4,8 @@ import '../public/Home.css'
 import Services from '../Components/Services.jsx'
 import EnquireNow from '../Components/EnquireNowForm.jsx'
 import OurClients from '../Components/OurClients.jsx'
+import WantToSee from '../Components/WantToSee.jsx'
+import Testimonial from '../Components/Testimonial.jsx'
 import { useState } from 'react'
 export default function Home()
 {
@@ -20,7 +22,9 @@ export default function Home()
         <HomeRight/>      
         </div>
         <Services />
+        <WantToSee/>
         <OurClients/>
+        <Testimonial/>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>
     )
