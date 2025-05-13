@@ -11,7 +11,7 @@ import { useState } from 'react'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+// import ReactSlick from '../Components/ReactSlick.jsx'
 
  
 export default function Home()
@@ -36,6 +36,7 @@ export default function Home()
         <OurClients/>
         <WantToSee/>
         <Testimonial/>
+        {/* <ReactSlick/> */}
         <Footer/>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>

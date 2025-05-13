@@ -15,9 +15,6 @@ export default function Testimonial()
             <h2>What Our Client Says</h2>
             <div className="card-container">
                 <div className="c-card" data-aos="zoom-out">
-                    {/* <div className="quote-class">
-                    
-                    </div> */}
                  <p><i className="fa-solid fa-quote-left quote"></i>We've seen a massive increase in qualified buyer leads since partnering with Innovader Technologies. The Google Ads strategy they implemented delivered results within just a week. Best investment we've made in our marketing!</p>
                     <div className="c-name">
                     <h4>Ravi K</h4>

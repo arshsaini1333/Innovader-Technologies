@@ -6,7 +6,7 @@
     padding: 1rem;
     gap: 1rem;
     /* background-color: #00c6fb; */
-    background: linear-gradient( #005bea, #00c6fb, #00c6fb, #00c6fb, #00c6fb, #00c6fb, #00c6fb, #fff);
+    background: linear-gradient( #005bea, #00c6fb, #00c6fb, #00c6fb, #00c6fb, #00c6fb, #00c6fb);
 }
 
 .Testimonial h2 {

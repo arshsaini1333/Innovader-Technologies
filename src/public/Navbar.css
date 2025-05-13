@@ -102,7 +102,8 @@ img {
 .letsTalk {
     text-decoration: none;
     font-size: 1.2rem !important;
-    background: linear-gradient(to right, #005bea, #005bea, #00c6fb) !important;
+    /* background: linear-gradient(to right, #005bea, #005bea, #00c6fb) !important; */
+    background-color: #1b70ef;
     color: white !important;
     border: 2px solid #1b70ef;
     border-radius: 2rem !important;
