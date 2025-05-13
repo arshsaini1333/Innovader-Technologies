@@ -102,13 +102,14 @@ img {
 .letsTalk {
     text-decoration: none;
     font-size: 1.2rem !important;
-    background-color: rgb(27, 113, 235) !important;
+    background: linear-gradient(to right, #005bea, #005bea, #00c6fb) !important;
     color: white !important;
     border: 2px solid #1b70ef;
     border-radius: 2rem !important;
     transition: 0.5s ease-in-out;
     padding: 0.3rem 1.2rem !important;
     margin-left: 5rem;
+    border-right: #00c6fb;
 }
 
 .letsTalk:hover {

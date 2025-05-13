@@ -44,7 +44,7 @@
 
 .left-section .ls-link {
     text-decoration: none;
-    background-color: #005bea;
+    background: linear-gradient(to right, #005bea, #005bea, #00c6fb);
     color: #fff;
     border: none;
     padding: 10px 20px;

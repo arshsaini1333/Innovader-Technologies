@@ -201,7 +201,8 @@
 .services {
     padding: 2rem 0;
     /* background-color: #1b70ef98; */
-    background-color: #00c6fb;
+    /* background-color: #00c6fb; */
+    background: linear-gradient( #005bea, #00c6fb, #00c6fb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,7 +248,8 @@
 }
 
 .os-card {
-    background-color: #f5f5f5;
+    /* background-color: #f5f5f5; */
+    background-color: white;
     padding: 1.5rem 0.7rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
