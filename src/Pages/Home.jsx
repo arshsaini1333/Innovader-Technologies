@@ -8,11 +8,17 @@ import WantToSee from '../Components/WantToSee.jsx'
 import Testimonial from '../Components/Testimonial.jsx'
 import Footer from '../Components/Footer.jsx'
 import { useState } from 'react'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
  
 export default function Home()
 {
-    
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
     const [isShow, setShow] = useState(false);
     function popUp()
     {
@@ -22,7 +28,8 @@ export default function Home()
     return (
         <>
         <div className='Home'>
-        <HomeLeft popUp={popUp} />      
+        <HomeLeft popUp={popUp} />  
+        <HomeRight/>      
         </div>
         <Services />
         
