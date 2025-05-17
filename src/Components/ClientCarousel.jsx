@@ -1,7 +1,13 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import './ClientCarousel.css'
+import '../public/ClientCarousel.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
+
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -33,10 +39,20 @@ const clinetInfo = [
 
 ]
 const ClientCarousel = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      once: false,     // Animation only happens once when scrolled into view
+    });
+  }, []);
+
+
+
   return (
 <div className="Testimonial">
             <h2>What Our Client Says</h2>
-            <div className="card-container">      
+            <div className="card-container" data-aos="zoom-in">      
         
         <Carousel
         responsive={responsive}
