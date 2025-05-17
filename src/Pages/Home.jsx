@@ -34,10 +34,8 @@ export default function Home()
         <HomeRight/>      
         </div>
         <Services />
-        
         <OurClients/>
-        <WantToSee/>
-       
+        <WantToSee/>      
         <ClientCarousel/>
         {/* <OurPackages/> */}
         <Footer/>

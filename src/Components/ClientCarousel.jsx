@@ -52,7 +52,7 @@ const ClientCarousel = () => {
   return (
 <div className="Testimonial">
             <h2>What Our Client Says</h2>
-            <div className="card-container" data-aos="zoom-in">      
+            {/* <div className="card-container" data-aos="zoom-in">       */}
         
         <Carousel
         responsive={responsive}
@@ -83,7 +83,7 @@ const ClientCarousel = () => {
         })}
       </Carousel>
     </div>
-    </div>
+    // </div>
   );
 };
 export default ClientCarousel;
