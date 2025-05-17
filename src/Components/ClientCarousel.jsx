@@ -42,9 +42,14 @@ const ClientCarousel = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in ms
-      once: false,     // Animation only happens once when scrolled into view
+      duration: 1000,
+      once: false,
     });
+  
+    // Force carousel to re-render if layout wasn't ready at mount
+    setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 200);
   }, []);
 
 
