@@ -44,7 +44,7 @@
 
 .left-section .ls-link {
     text-decoration: none;
-    background: linear-gradient(to right, #005bea, #005bea, #00c6fb);
+    background: linear-gradient(to right, #005bea, #1b70ef98);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -73,7 +73,7 @@
 }
 
 .card-header {
-    background: linear-gradient(to right, #005bea, #00c6fb);
+    background: linear-gradient(to right, #005bea, #1b70ef98);
     border: none;
     color: #fff;
     padding: 10px;
@@ -104,7 +104,7 @@
     width: 100%;
     height: 120px;
     /* background: linear-gradient( #005bea, #00c6fb); */
-    background-color: #005bea;
+    background: linear-gradient(to right, #005bea, #1b70ef98, #1b70ef98);
     clip-path: ellipse(70% 100% at 50% 100%);
     z-index: 1;
 }

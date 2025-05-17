@@ -200,9 +200,9 @@
 
 .services {
     padding: 2rem 0;
-    /* background-color: #1b70ef98; */
+    background-color: #1b70ef98;
     /* background-color: #00c6fb; */
-    background: linear-gradient( #005bea, #00c6fb, #00c6fb);
+    /* /* background: linear-gradient( #005bea, #00c6fb, #00c6fb); */
     display: flex;
     justify-content: center;
     align-items: center;

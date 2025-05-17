@@ -5,6 +5,7 @@ import Services from '../Components/Services.jsx'
 import EnquireNow from '../Components/EnquireNowForm.jsx'
 import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
+import OurPackages from '../Components/OurPackages.jsx'
 // import Testimonial from '../Components/Testimonial.jsx'
 import ClientCarousel from '../Components/ClientCarousel.jsx'
 import Footer from '../Components/Footer.jsx'
@@ -38,6 +39,7 @@ export default function Home()
         <WantToSee/>
         {/* <Testimonial/> */}
         <ClientCarousel/>
+        {/* <OurPackages/> */}
         <Footer/>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>
