@@ -1,4 +1,4 @@
-.Testimonial {
+/* .Testimonial {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,10 +6,15 @@
     padding: 1rem;
     gap: 1rem;
     /* background-color: #00c6fb; */
-    background: linear-gradient( #005bea, #00c6fb, #00c6fb, #00c6fb);
-}
 
-.Testimonial h2 {
+
+/* background: linear-gradient( #005bea, #00c6fb, #00c6fb, #00c6fb); */
+
+
+/* } */
+
+
+/* .Testimonial h2 {
     text-align: center;
     color: #005bea;
     background-color: white;
@@ -28,7 +33,7 @@
     row-gap: 3rem;
     column-gap: 1rem;
     width: 100%;
-}
+} */
 
 .c-card {
     /* background: linear-gradient(to right, #337bee, #00c6fb); */

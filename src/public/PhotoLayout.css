@@ -129,5 +129,6 @@
         width: 70%;
         min-height: 20rem;
         justify-content: flex-start;
+        padding: 2rem 0.5rem;
     }
 }

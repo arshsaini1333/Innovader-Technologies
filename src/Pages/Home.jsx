@@ -5,7 +5,8 @@ import Services from '../Components/Services.jsx'
 import EnquireNow from '../Components/EnquireNowForm.jsx'
 import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
-import Testimonial from '../Components/Testimonial.jsx'
+// import Testimonial from '../Components/Testimonial.jsx'
+import ClientCarousel from '../Components/ClientCarousel.jsx'
 import Footer from '../Components/Footer.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
@@ -35,8 +36,8 @@ export default function Home()
         
         <OurClients/>
         <WantToSee/>
-        <Testimonial/>
-        {/* <ReactSlick/> */}
+        {/* <Testimonial/> */}
+        <ClientCarousel/>
         <Footer/>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>

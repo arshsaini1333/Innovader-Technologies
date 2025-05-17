@@ -23,24 +23,23 @@ export default function WantToSee(){
       </div>
       <div className="card-section" data-aos="slide-left">
         <div className="card">
-          <button className="card-header">Marketing</button>
+          <button className="card-header">Industies We Serve</button>
           <ul>
-          <li>Marketing & Sales Automation</li>
-          <li>Social Media Marketing</li>
-          <li>Lead Generation</li>
-          <li>Meta Ads</li>
-          <li>Google Ads</li>
+          <li>Real Estate Builders</li>
+          <li>Real Estate Brokers</li>
+          <li>Real Estate Agents</li>
+          <li>Property Consultants</li>
           </ul>
         </div>
         <div className="card">
-          <button className="card-header">Services</button>
+          <button className="card-header">How We Work</button>
           <ul>
-          <li>SEO</li>
-            <li>PPC</li>
+          
+            <li>Lead Generation Process</li>
            
-            <li>Website Designing</li>
-            <li>Content Creation</li>
-            <li>Video Ad Shoot</li>
+            <li>As Funnel Strategy</li>
+            <li>CRM & Follow-up System</li>
+            <li>Reporting & Results</li>
             
           </ul>
         </div>
