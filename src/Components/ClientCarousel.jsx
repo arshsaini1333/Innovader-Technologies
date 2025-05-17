@@ -9,21 +9,26 @@ import { useEffect } from 'react';
 
 
 const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 1024 },
     items: 4,
-    slidesToSlide: 4 // optional, default to 1.
+    slidesToSlide: 4, // 👈 this should match `items`
   },
-  tablet: {
+  desktop: {
     breakpoint: { max: 1024, min: 768 },
     items: 3,
-    slidesToSlide: 3 // optional, default to 1.
+    slidesToSlide: 3,
+  },
+  tablet: {
+    breakpoint: { max: 768, min: 464 },
+    items: 2,
+    slidesToSlide: 2,
   },
   mobile: {
-    breakpoint: { max: 767, min: 464 },
-    items: 2,
-    slidesToSlide: 1 // optional, default to 1.
-  }
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
 };
 const clinetInfo = [
   {name:"Ravi K", desg:"Real Estate Developer", review:"We've seen a massive increase in qualified buyer leads since partnering with Innovader Technologies. The Google Ads strategy they implemented delivered results within just a week. Best investment we've made in our marketing!"},
@@ -56,7 +61,7 @@ const ClientCarousel = () => {
     // Fallback: fire resize anyway after a delay
     const resizeFallback = setTimeout(() => {
       handleResize();
-    }, 500);
+    }, 1000);
   
     return () => {
       window.removeEventListener('load', handleResize);
@@ -83,8 +88,10 @@ const ClientCarousel = () => {
         dotListClass="custom-dot-list-style"
       >
         {clinetInfo.map((client, index) => {
+          console.log(client.name)
           return (
-            <div className="slider" key={index}>
+           
+            <div className="slider" key={index} >
               <div className="headings">
                 <div className="quoteDiv"><i className="fa-solid fa-quote-left quote"></i></div>
               <div><h4>{client.name}</h4>
