@@ -46,11 +46,24 @@ const ClientCarousel = () => {
       once: false,
     });
   
-    // Force carousel to re-render if layout wasn't ready at mount
-    setTimeout(() => {
+    const handleResize = () => {
       window.dispatchEvent(new Event('resize'));
-    }, 200);
+    };
+  
+    // Wait until page is fully loaded (images, fonts, etc.)
+    window.addEventListener('load', handleResize);
+  
+    // Fallback: fire resize anyway after a delay
+    const resizeFallback = setTimeout(() => {
+      handleResize();
+    }, 500);
+  
+    return () => {
+      window.removeEventListener('load', handleResize);
+      clearTimeout(resizeFallback);
+    };
   }, []);
+  
 
 
 
