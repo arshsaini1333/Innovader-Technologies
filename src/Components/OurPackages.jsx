@@ -1,144 +1,90 @@
-import React, { useState } from "react";
+import '../public/OurPackages.css'
+import EnquireNow from './EnquireNowForm.jsx'
+import { useState } from 'react';
+export default function OurPackages()
+{
+    const [isShow, setShow] = useState(false);
+    function popUp()
+    {
+        setShow(!isShow);
+    }
+  return(
+    <>
+    <div className="OurPackages">
+        <h2>Our Packages</h2>
+        <div className="package-cont">
+            {/* <div className="stack1"> */}
+            <div className="package-card small">
+                <div className="p-name">Performance Plan</div>
+                <div className="p-descp">Ads Only</div>
+                <div className="p-benefits">
+                    <ul>
+                        <li>Meta Ads (Facebook & Instagram)</li>
+                        <li>Google Ads</li>
+                        <li>Lead Form Set Up & Optimization</li>
+                        <li>Weekly Ad Performance Report</li>
+                    </ul>
+                </div>
+                <button onClick={()=>popUp()}>Get Quote</button>
+            </div>
+            
+            {/* </div> */}
+           {/* <div className="stack2"> */}
+           <div className="package-card big">
+                <div className="p-name">High Impact Plan</div>
+                <div className="p-descp">Video Shoot + Models + Ads</div>
+                <div className="p-benefits">
+                    <ul>
+                        <li>On Location Video Shoot</li>
+                        <li>Professional Models Included</li>
+                        <li>Video Editing & Reel Creation</li>
+                        <li>Meta Ads (Facebook & Instagram)</li>
+                        <li>Google Ads</li>
+                        <li>Script Concept and Execution</li>
+                        <li>Reporting & Performance Tracking</li>
+                    </ul>
+                </div>
+                <button onClick={()=>popUp()}>Get Quote</button>
+            </div>
+            <div className="package-card big">
+                <div className="p-name">Premium Plan</div>
+                <div className="p-descp">Complete Social Media Handle & Ads</div>
+                <div className="p-benefits">
+                    <ul style={{marginTop:"1rem"}}>
+                        <li>Full Socail Media Handling (Instagram, Facebook etc)</li>
+                        <li>Meta Ads (Facebook + Instagram)</li>
+                        <li>Google Ads (Search + Display)</li>
+                        <li>Professional Video Shoot with Model</li>
+                        <li>Creative Script Writing & Story Boarding</li>
+                        <li>Reels, Property, Walk-Through and Promo Videos </li>
+                        <li>Post Designing + Caption Writing</li>
+                        <li>Monthly Reporting & Strategy</li>
+                    </ul>
+                </div>
+                <button onClick={()=>popUp()}>Get Quote</button>
+                
+            </div>
 
-const plansData = [
-  {
-    title: "Premium Plan - Complete Social Media Handle & Ads",
-    features: [
-      "Full Social Media Handling (Instagram, Facebook, etc.)",
-      "Meta Ads (Facebook + Instagram)",
-      "Google Ads (Search + Display)",
-      "Professional Video Shoots with Models",
-      "Creative Scriptwriting & Storyboarding",
-      "Reels, Property Walkthroughs, Promo Videos",
-      "Post Designing & Caption Writing",
-      "Monthly Reporting & Strategy",
-    ],
-  },
-  {
-    title: "High Impact Plan - Video Shoot + Models + Ads",
-    features: [
-      "On-location Video Shoot",
-      "Professional Models Included",
-      "Video Editing & Reel Creation",
-      "Meta Ads (Facebook & Instagram)",
-      "Google Ads",
-      "Scripting Concept and Execution",
-      "Reporting & Performance Tracking",
-    ],
-  },
-  {
-    title: "Growth Plan - Video Editing + Ads",
-    features: [
-      "Video Editing (Reels)",
-      "Meta Ads (Facebook & Instagram)",
-      "Google Ads",
-      "Campaign Strategy & Reporting",
-    ],
-  },
-  {
-    title: "Performance Plan - Ads Only",
-    features: [
-      "Meta Ads (Facebook & Instagram)",
-      "Google Ads",
-      "Lead Form Setup & Optimization",
-      "Weekly Ad Performance Report",
-    ],
-  },
-];
-
-const QuoteForm = () => {
-  const [form, setForm] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    plan: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert(`Quote Requested for ${form.plan}`);
-    // Add API call or processing logic here
-  };
-
-  return (
-    <form onSubmit={handleSubmit} style={{ marginTop: "20px" }}>
-      <h3>Get Quote</h3>
-      <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        value={form.name}
-        onChange={handleChange}
-        required
-      /><br />
-      <input
-        type="text"
-        name="phone"
-        placeholder="Phone No."
-        value={form.phone}
-        onChange={handleChange}
-        required
-      /><br />
-      <input
-        type="email"
-        name="email"
-        placeholder="Email ID"
-        value={form.email}
-        onChange={handleChange}
-        required
-      /><br />
-      <select name="plan" value={form.plan} onChange={handleChange} required>
-        <option value="">Choose Plan</option>
-        {plansData.map((plan, idx) => (
-          <option key={idx} value={plan.title.split(" - ")[0]}>
-            {plan.title.split(" - ")[0]}
-          </option>
-        ))}
-      </select><br />
-      <button type="submit">Submit</button>
-    </form>
-  );
-};
-
-const OurPackages = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  return (
-    <div>
-      <h2>Our Packages</h2>
-      {plansData.map((plan, index) => (
-        <div key={index} style={{ marginBottom: "20px" }}>
-          <div
-            onClick={() => toggle(index)}
-            style={{
-              cursor: "pointer",
-              background: "#eee",
-              padding: "10px",
-              border: "1px solid #ccc",
-            }}
-          >
-            <strong>{plan.title}</strong>
-          </div>
-          {openIndex === index && (
-            <ul style={{ padding: "10px", background: "#f9f9f9" }}>
-              {plan.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-          )}
+            <div className="package-card small">
+                <div className="p-name">Growth Plan</div>
+                <div className="p-descp">Video Editing + Ads</div>
+                <div className="p-benefits">
+                    <ul>
+                        <li>Video Editing (Reels)</li>
+                        <li>Meta Ads (Facebook & Instagram)</li>
+                        <li>Google Ads</li>
+                        <li>Campaign Strategy & Reporting</li>
+                    </ul>
+                </div>
+                <button onClick={()=>popUp()}>Get Quote</button>
+            </div>
+           {/* </div> */}
+            
         </div>
-      ))}
-      {/* <QuoteForm /> */}
     </div>
-  );
-};
 
-export default OurPackages;
+
+    <EnquireNow isShow={isShow} popUp={popUp}/>
+    </>
+  )
+}

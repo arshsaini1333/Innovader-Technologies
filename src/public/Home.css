@@ -526,17 +526,6 @@
 
 /* --------------Client-------------- */
 
-.our-c-h {
-    text-align: center;
-    /* color: #1b71eb; */
-    color: #1b70ef;
-    font-weight: bolder;
-    font-size: 3rem;
-    width: auto;
-    /* border-bottom: 4px solid #1b71eb; */
-    border-radius: 5rem;
-}
-
 .slider-wrapper {
     width: 100%;
     /* max-width: 1100px; */
@@ -544,6 +533,25 @@
     margin: 40px auto;
     position: relative;
     padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.our-c-h {
+    text-align: center;
+    /* color: #1b71eb; */
+    background-color: #1b70ef;
+    color: white;
+    font-weight: bolder;
+    width: auto;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* border-radius: 5rem; */
 }
 
 .slider-track {

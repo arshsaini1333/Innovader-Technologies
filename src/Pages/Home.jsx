@@ -7,13 +7,11 @@ import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
 import OurPackages from '../Components/OurPackages.jsx'
 import Testimonial from '../Components/Testimonial.jsx'
-// import ClientCarousel from '../Components/ClientCarousel.jsx'
 import Footer from '../Components/Footer.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-// import ReactSlick from '../Components/ReactSlick.jsx'
 
  
 export default function Home()
@@ -36,9 +34,9 @@ export default function Home()
         <Services />
         <OurClients/>
         <WantToSee/>      
-        {/* <ClientCarousel/> */}
+        
         <Testimonial/>
-        {/* <OurPackages/> */}
+        <OurPackages/>
         <Footer/>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>
