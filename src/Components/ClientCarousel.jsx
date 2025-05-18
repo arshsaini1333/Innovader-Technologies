@@ -79,6 +79,7 @@ const ClientCarousel = () => {
         <Carousel
         responsive={responsive}
         autoPlay={true}
+        autoPlaySpeed={5000}
         swipeable={true}
         draggable={true}
         showDots={true}

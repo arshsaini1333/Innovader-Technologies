@@ -200,9 +200,10 @@
 
 .services {
     padding: 2rem 0;
-    background-color: #1b70ef98;
+    /* background-color: #1b70ef98; */
     /* background-color: #00c6fb; */
     /* /* background: linear-gradient( #005bea, #00c6fb, #00c6fb); */
+    background: linear-gradient(#1b70ef, white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,8 +285,10 @@
     text-decoration: none;
     /* background-color: #1b71eb;
     color: white; */
-    background-color: white;
-    color: #1b70ef;
+    /* background-color: white;
+    color: #1b70ef; */
+    background-color: #1b70ef;
+    color: white;
     font-size: 1.1rem;
     font-weight: 800;
     padding: 0.7rem 1.5rem;
