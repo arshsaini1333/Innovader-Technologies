@@ -44,13 +44,13 @@ export default function OurPackages()
                         <li>Reporting & Performance Tracking</li>
                     </ul>
                 </div>
-                <button onClick={()=>popUp()}>Get Quote</button>
+                <button onClick={()=>popUp()} className='button-cp'>Get Quote</button>
             </div>
             <div className="package-card big">
                 <div className="p-name">Premium Plan</div>
                 <div className="p-descp">Complete Social Media Handle & Ads</div>
                 <div className="p-benefits">
-                    <ul style={{marginTop:"1rem"}}>
+                    <ul >
                         <li>Full Socail Media Handling (Instagram, Facebook etc)</li>
                         <li>Meta Ads (Facebook + Instagram)</li>
                         <li>Google Ads (Search + Display)</li>

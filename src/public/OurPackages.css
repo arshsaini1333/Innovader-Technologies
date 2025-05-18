@@ -47,17 +47,16 @@
     /* justify-content: center; */
     align-items: center;
     padding: 1rem 1rem;
-    position: relative;
     transition: 1s all ease;
 }
 
 .small {
-    height: 25rem !important;
+    min-height: 25rem;
     width: 20%;
 }
 
 .big {
-    min-height: 32rem !important;
+    min-height: 32rem;
     width: 30%;
 }
 
@@ -118,9 +117,8 @@
     font-weight: 900;
     color: white;
     border: none;
-    position: absolute;
-    bottom: 1rem;
     cursor: pointer;
+    margin-top: 1rem;
 }
 
 .package-card:hover {
@@ -139,5 +137,17 @@
     button {
         background-color: white;
         color: #1b70ef;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .package-cont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .package-card {
+        width: 80%;
     }
 }
