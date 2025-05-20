@@ -29,7 +29,10 @@ export default function Services()
       }, []);
     return(
         <div className="services">
-        <div className="services-content" data-aos="zoom-in" data-aos-delay="200">
+            <div id="lottie-animation" className="services-ani" >
+        <Lottie animationData={animationData} loop={true} />
+        </div>
+        <div className="services-content" >
             <h2>Our Services</h2>
             <div className="os-container">
                 <div className="os-card">
@@ -86,9 +89,7 @@ export default function Services()
                
             </div>
         </div>
-        <div id="lottie-animation" className="services-ani" data-aos="zoom-in">
-        <Lottie animationData={animationData} loop={true} />
-        </div>
+        
 
     </div>
     )
