@@ -1,7 +1,7 @@
 .photo-layout {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     padding: 50px;
     background: #fff;
