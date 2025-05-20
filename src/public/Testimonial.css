@@ -60,7 +60,9 @@
     width: 100%;
     text-align: right;
     h4 {
-        color: #1b70ef;
+        /* color: #1b70ef;
+         */
+        color: rgba(245, 245, 83);
         /* color: white; */
         font-size: 1.1rem;
         font-weight: 800;
@@ -73,7 +75,10 @@
 .quote {
     overflow: hidden;
     font-size: 3rem;
-    color: #00c6fb;
+    /* color: #00c6fb;
+     */
+    color: rgba(245, 245, 83, 0.781) !important;
+    /* color: yellow !important; */
     /* color: white; */
     /* font-size: 4rem; */
 }

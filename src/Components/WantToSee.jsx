@@ -44,7 +44,7 @@ export default function WantToSee(){
           </ul>
         </div>
       </div>
-      <div className="wave"></div>
+      {/* <div className="wave"></div> */}
     </div>
   );
 };
