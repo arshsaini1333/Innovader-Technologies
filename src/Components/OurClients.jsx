@@ -15,12 +15,12 @@ export default function OurClients(){
   const [isHovered, setIsHovered] = useState(false);
 
   // Pause animation on hover
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in ms
-      once: false,     // Animation only happens once when scrolled into view
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // Animation duration in ms
+  //     once: false,     // Animation only happens once when scrolled into view
+  //   });
+  // }, []);
   useEffect(() => {
     const slider = sliderRef.current;
     if (slider) {
@@ -29,7 +29,7 @@ export default function OurClients(){
   }, [isHovered]);
 
   return (
-    <div className="slider-wrapper"  data-aos="slide-left">
+    <div className="slider-wrapper"  >
       <h2 className="our-c-h">Our Clients</h2>
       <div
         className="slider-track"

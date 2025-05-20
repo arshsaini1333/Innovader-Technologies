@@ -13,7 +13,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 2rem;
-    background-color: rgba(0, 0, 0, 0.078);
+    /* background-color: rgba(0, 0, 0, 0.078); */
+}
+
+.photo-layout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.671);
+    /* Dark transparent overlay */
+    z-index: 2;
 }
 
 .left-section {

@@ -62,7 +62,8 @@
     h4 {
         /* color: #1b70ef;
          */
-        color: rgba(245, 245, 83);
+        /* color: rgba(245, 245, 83); */
+        color: #FFC300;
         /* color: white; */
         font-size: 1.1rem;
         font-weight: 800;
@@ -77,7 +78,7 @@
     font-size: 3rem;
     /* color: #00c6fb;
      */
-    color: rgba(245, 245, 83, 0.781) !important;
+    color: #FFC300!important;
     /* color: yellow !important; */
     /* color: white; */
     /* font-size: 4rem; */
