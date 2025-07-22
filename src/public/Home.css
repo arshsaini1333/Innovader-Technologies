@@ -2,13 +2,19 @@
     display: flex;
     justify-content: center;
     padding: 2rem 1rem;
-    /* align-items: center; */
-    height: 670px;
     overflow: hidden;
-    /* border-bottom: 5px solid red; */
     height: 100vh;
-    box-sizing: border-box;
-    /* Make sure padding doesn't overflow */
+    position: fixed;
+    top: 0;
+}
+
+.Parallax {
+    /* border-top: 2px solid black; */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.269);
+    background-color: white !important;
+    margin-top: 100vh;
+    position: relative;
+    z-index: 10;
 }
 
 .HomeRight {
@@ -28,7 +34,7 @@
     overflow: hidden;
     transform: rotate(18deg);
     position: relative;
-    top: -5rem;
+    top: -10rem;
     right: -4rem;
     background-color: rgba(235, 232, 232, 0.735);
     padding: 2rem 1rem;
@@ -199,135 +205,60 @@
 /* ----------Services------------ */
 
 .services {
-    padding: 2rem 0;
-    /* background-color: #1b70ef98; */
-    /* background-color: #00c6fb; */
-    /* /* background: linear-gradient( #005bea, #00c6fb, #00c6fb); */
-    background: linear-gradient(#1b70ef, white);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 1.5rem;
-    /* margin-top: 2rem; */
-    margin-bottom: 3rem;
-}
-
-.services-ani {
-    width: 40%;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 5rem 0;
 }
 
 .services-content {
-    width: 60%;
-    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.service-card {
+    width: 18%;
+    /* border: 2px solid red; */
+    /* text-align: center; */
+    padding: 1rem 0.5rem;
+    min-height: 10rem;
+    background-color: rgb(239, 233, 233);
+    border-radius: 1rem;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.services-content h2 {
-    text-align: center;
-    /* color: #1b71eb; */
-    color: #1b70ef;
-    font-weight: bolder;
-    font-size: 3rem;
-    width: 45%;
-    /* border-bottom: 4px solid #1b71eb; */
-    background-color: white;
-    border: 4px solid white;
-    border-radius: 5rem;
-}
-
-.os-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 columns */
-    gap: 20px;
-    /* space between cards */
-    padding: 20px;
-}
-
-.os-card {
-    /* background-color: #f5f5f5; */
-    background-color: white;
-    padding: 1.5rem 0.7rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-weight: 600;
-    height: 4.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 1rem;
-    overflow: hidden;
-}
-
-.os-card img {
-    height: 3rem;
-    width: 3rem;
-}
-
-.os-card p {
-    width: 82%;
-    text-align: left;
-}
-
-.os-btn {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
-.os-btn .link {
-    text-decoration: none;
-    /* background-color: #1b71eb;
-    color: white; */
-    /* background-color: white;
-    color: #1b70ef; */
-    background-color: #1b70ef;
-    color: white;
-    font-size: 1.1rem;
-    font-weight: 800;
-    padding: 0.7rem 1.5rem;
-    border-radius: 2rem;
+.service-headings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 2rem;
+    text-align: center;
 }
 
-@media screen and (max-width: 990px) {
-    .services {
-        flex-direction: column-reverse;
-        gap: 0rem;
-        margin-top: 0rem;
-        padding: 2 1.5rem;
-    }
-    .services-content {
-        width: 100%;
-        padding: 0 0.5rem;
-        /* border: 2px solid rebeccapurple; */
-    }
+.sh-super {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #333;
 }
 
-@media screen and (max-width: 550px) {
-    .services {
-        padding: 2rem 0;
-    }
-    .services-ani {
-        width: 60%;
-        height: 60%;
-    }
-    .os-container {
-        grid-template-columns: repeat(1, 1fr);
-        p {
-            width: 90%;
-        }
-    }
-    .services-content h2 {
-        margin: 0 0.3rem;
-        width: 100%;
-    }
+.sh-sub {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1b70ef;
+    text-transform: uppercase;
 }
+
+
+/* -------------------------Form---------------------------------- */
 
 .enquire {
     width: 30%;
@@ -557,24 +488,25 @@
 .slider-track {
     display: flex;
     width: fit-content;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 30s linear infinite;
 }
 
 .slide {
     flex: 0 0 auto;
-    width: 15rem;
+    width: 12rem;
+    height: 12rem;
     margin: 0 10px;
     padding: 1rem;
+    overflow: hidden;
 }
 
 .slide img {
     width: 100%;
-    height: 13rem;
+    /* height: 13rem; */
     object-fit: cover;
     background: white;
     border-radius: 12px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.603);
-    padding: 10px;
 }
 
 

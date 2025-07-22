@@ -1,7 +1,8 @@
 .photo-layout {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
+    align-items: flex-end;
     position: relative;
     padding: 50px;
     background: #fff;
@@ -14,6 +15,7 @@
     background-size: cover;
     margin-bottom: 2rem;
     /* background-color: rgba(0, 0, 0, 0.078); */
+    padding-bottom: 7rem;
 }
 
 .photo-layout::before {

@@ -13,9 +13,6 @@ function App() {
     
       {/* <BrowserRouter> */}
       <Navbar />
-      <Toolbar /> 
-     
-        
         <Routes >
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

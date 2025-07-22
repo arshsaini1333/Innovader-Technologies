@@ -73,7 +73,7 @@ export default function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }} >
       <CssBaseline />
-      <AppBar component="nav" className="Navbar">
+      <AppBar component="nav" className="Navbar"  >
         <Toolbar >
           <IconButton
             color="inherit"

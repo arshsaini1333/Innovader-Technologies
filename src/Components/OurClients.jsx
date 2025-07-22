@@ -13,14 +13,6 @@ export default function OurClients(){
   const images = [c1, c2, c3, c4, c5, c6, c7,c1, c2, c3, c4, c5, c6, c7];
   const sliderRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
-
-  // Pause animation on hover
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000, // Animation duration in ms
-  //     once: false,     // Animation only happens once when scrolled into view
-  //   });
-  // }, []);
   useEffect(() => {
     const slider = sliderRef.current;
     if (slider) {
@@ -30,7 +22,10 @@ export default function OurClients(){
 
   return (
     <div className="slider-wrapper"  >
-      <h2 className="our-c-h">Our Clients</h2>
+      <div className="service-headings">
+        <div className="sh-sub">Our Clients</div>
+        <div className="sh-super">We partner with businesses of all sizes to fuel their digital growth</div>
+      </div>
       <div
         className="slider-track"
         ref={sliderRef}

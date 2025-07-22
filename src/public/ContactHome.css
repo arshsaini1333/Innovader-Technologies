@@ -1,0 +1,99 @@
+    .ContactHome {
+        width: 100%;
+        display: flex;
+        /* align-items: flex-start; */
+        align-items: center;
+        /* gap: 2rem; */
+        /* background-color: #2fb2b2; */
+        padding-right: 2rem;
+        position: relative;
+        background-color: white;
+        z-index: 10;
+    }
+    
+    .rightContainer {
+        width: 50%;
+    }
+    
+    .rightContainer img {
+        height: 40rem;
+        width: 42rem;
+    }
+    
+    .formfill {
+        /* color: red; */
+        font-weight: 600;
+    }
+    
+    .formContent {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        /* gap: 1rem; */
+    }
+    
+    .formHeading {
+        font-size: 2rem;
+        word-spacing: 4px;
+        font-weight: 600;
+        color: red;
+    }
+    
+    .formsub {
+        color: #1b70ef;
+        font-family: cursive;
+    }
+    
+    .left-container {
+        border: 2px solid rgba(0, 0, 0, 0.253);
+        background-color: rgba(0, 0, 0, 0.034);
+        position: relative;
+        z-index: 2 !important;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 2rem;
+    }
+    
+    .formArea {
+        width: 80%;
+    }
+    
+    .contact-form-home {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-form-home input,
+    .contact-form-home select {
+        padding: 12px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        outline: none;
+        transition: border 0.2s ease;
+    }
+    
+    .contact-form-home input:focus,
+    .contact-form-home select:focus {
+        border-color: #007bff;
+    }
+    
+    .contact-form-home button {
+        padding: 12px;
+        font-size: 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+    
+    .contact-form-home button:hover {
+        background-color: #0056b3;
+    }

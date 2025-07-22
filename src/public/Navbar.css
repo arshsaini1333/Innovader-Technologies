@@ -1,6 +1,8 @@
 .Navbar {
     background-color: white !important;
     color: #1b70ef;
+    z-index: 1500;
+    /* background-color: red !important; */
 }
 
 .nav-links {
@@ -105,12 +107,13 @@ img {
     /* background: linear-gradient(to right, #005bea, #005bea, #00c6fb) !important; */
     background-color: #1b70ef;
     color: white !important;
-    border: 2px solid #1b70ef;
+    /* border: 2px solid #1b70ef; */
     border-radius: 2rem !important;
     transition: 0.5s ease-in-out;
     padding: 0.3rem 1.2rem !important;
     margin-left: 5rem;
     border-right: #00c6fb;
+    background-color: #1b70ef;
 }
 
 .letsTalk:hover {
