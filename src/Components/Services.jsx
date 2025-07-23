@@ -76,11 +76,11 @@ export default function Services()
         <div className="services">
             <div className="service-headings">
                 <div className="sh-sub">Our Services </div>
-                <siv className="sh-super">Driving Growth with Marketing, Design & Automation</siv>
+                <div className="sh-super">Driving Growth with Marketing, Design & Automation</div>
             </div>
             <div className="services-content">
-            {data.map(d => (
-                <div className="service-card">
+            {data.map((d, index) => (
+                <div className="service-card" key={index}>
                     <img src={d.img} alt="" />
                     <p>{d.name}</p>
                 </div>

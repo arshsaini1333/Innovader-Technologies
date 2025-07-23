@@ -40,7 +40,7 @@ function HomeLeft({popUp}){
 
   return (
     <div className="p-6 max-w-xl mx-auto text-center HomeLeft" data-aos="zoom-in">
-      <h2 className="text-2xl font-bold mb-6 heading">The Journey from  <span className="heads1">Website Traffic</span>  to <span className="heads2">Real Leads</span> Starts Here</h2>
+      <h2 className="home-heading">The Journey from  <span className="heads1">Website Traffic</span>  to <span className="heads2">Real Leads</span> Starts Here</h2>
       <div className="h-10">
         <AnimatePresence mode="wait">
           <motion.p

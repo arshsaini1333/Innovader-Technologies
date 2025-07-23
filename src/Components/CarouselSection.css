@@ -1,0 +1,142 @@
+.container {
+    width: 100% !important;
+}
+
+.carousel-wrapper.container {
+    width: 100% !important;
+}
+
+.carousel-slide {
+    /* background-color: #111; */
+    display: flex;
+    /* align-items: center; */
+    /* color: white; */
+    justify-content: center;
+    font-size: 22px;
+    padding: 0 20px;
+    text-align: center;
+    width: 100% !important;
+}
+
+.carousel {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.183);
+    background-color: rgb(239, 233, 233);
+}
+
+.marketing-slides-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 100%;
+    /* background-color: black; */
+    /* height: 100vh !important; */
+}
+
+.carousel-slide:hover {
+    transform: translateY(-5px);
+}
+
+.slide-image {
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.slide-image img {
+    height: 20rem !important;
+}
+
+.slide-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 1rem;
+}
+
+.slide-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    overflow: hidden;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.slide-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.slide-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.slide-content button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    .slide {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slide-content {
+        padding: 20px;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    /* change to any color you want */
+    /* background-size: 100%, 100%; */
+    border-radius: 50%;
+    padding: 0.5rem;
+    filter: invert(1);
+    /* useful if default icon is white SVG */
+}
+
+
+/* Optional: Customize hover */
+
+.carousel-control-next {
+    width: 2% !important;
+}
+
+.carousel-control-prev {
+    width: 2% !important;
+}
