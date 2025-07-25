@@ -1,6 +1,5 @@
 import React from 'react';
 import CarouselSection from './CarouselSection';
-
 export default function WantToSee(){
        return(
         <div className='WantToSee'>
@@ -10,6 +9,7 @@ export default function WantToSee(){
           </div>
           {/* Slider */}
           <CarouselSection/>
+
         </div>
        )
 };

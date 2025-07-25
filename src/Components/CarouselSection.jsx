@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import "./CarouselSection.css";
+import "../public/CarouselSection.css";
 import "bootstrap/dist/css/bootstrap.min.css"; // Important
 import wt1 from '../assets/wt1.png'
 import wt2 from '../assets/wt2.jpg'
@@ -53,7 +53,7 @@ const CarouselSection = () => {
       <Carousel className="carousel">
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
-            <div className="carousel-slide">
+          <div className="carousel-slide">
             
           <div className="slide-image">
             <img src={slide.image} alt={slide.title} />

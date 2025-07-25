@@ -60,11 +60,6 @@
     height: 20rem !important;
 }
 
-.slide-image img {
-    max-width: 100%;
-    height: auto;
-}
-
 .slide-content {
     margin-top: 1.5rem;
     display: flex;

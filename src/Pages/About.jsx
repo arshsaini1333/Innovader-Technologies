@@ -1,5 +1,5 @@
-// import Carousel from "../Components/Carousel"
-import ClientCarousel from "../Components/ClientCarousel"
+import ThreeDCarousel from "../Components/Portfolio"
+
 export default function About()
 {
     return (
@@ -13,7 +13,8 @@ export default function About()
         <p>Hello</p>
         <p>Hello</p>
         {/* <Carousel/> */}
-        <ClientCarousel/>
+        <ThreeDCarousel/>
+
         </>
     )
 }
