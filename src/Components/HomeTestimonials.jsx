@@ -144,7 +144,7 @@ const HomeTestimonials = () => {
         <div className="left-column">
        <CounterCircle target={200} label="Projects" />
        <CounterCircle target={50} label="Happy Clients" />
-      <CounterCircle target={50} label="Project Value" suffix="L" />
+      <CounterCircle target={70} label="NPS Score"  />
       </div>
  <p><FormatQuoteIcon className='fq-start fq'/>Our clients’ success stories reflect our commitment to excellence. See how we’ve helped them find their dream homes, sustainable investments, and perfect getaways.<FormatQuoteIcon className='fq'/></p>
       <div className="ht-cta">
