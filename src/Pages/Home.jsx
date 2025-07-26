@@ -42,7 +42,7 @@ export default function Home()
         
         {/* <Testimonial/> */}
         <HomeTestimonials/>
-        <HoverPanels/>
+        {/* <HoverPanels/> */}
         <ContactHome/>
         <Footer/>
         </div>
