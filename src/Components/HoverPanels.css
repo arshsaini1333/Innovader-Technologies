@@ -1,0 +1,66 @@
+.hover-panels {
+    display: flex;
+    /* background-color: #0e0e0e; */
+    color: #333;
+    /* height: 300px; */
+    transition: all 0.3s ease-in-out;
+    height: 350px;
+}
+
+.panel {
+    flex: 1;
+    padding: 2rem;
+    border-right: 1px solid black;
+    transition: flex 0.5s ease, background 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden !important;
+}
+
+.panel:last-child {
+    border-right: none;
+}
+
+.panel-number {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+    overflow: hidden;
+}
+
+.data-show {
+    overflow: hidden !important;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.panel-title {
+    width: 80%;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.panel-desc {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    opacity: 0.8;
+    width: 100%;
+    overflow: hidden;
+}
+
+.panel:not(.active) {
+    flex: 0.8;
+    opacity: 0.7;
+}
+
+.panel.active {
+    flex: 2;
+    /* background-color: #111111; */
+    opacity: 1;
+    overflow: hidden;
+}

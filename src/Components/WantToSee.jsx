@@ -1,5 +1,6 @@
 import React from 'react';
-import CarouselSection from './CarouselSection';
+// import CarouselSection from './CarouselSection';
+import ThreeDCarousel from './Portfolio';
 export default function WantToSee(){
        return(
         <div className='WantToSee'>
@@ -8,7 +9,8 @@ export default function WantToSee(){
             <div className="sh-super">We don’t just run campaigns. We generate real, high-quality leads that convert into sales.</div>
           </div>
           {/* Slider */}
-          <CarouselSection/>
+          {/* <CarouselSection/> */}
+          <ThreeDCarousel/>
 
         </div>
        )

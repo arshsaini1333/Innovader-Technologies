@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import '../public/ContactHome.css';
-import cus from '../assets/contactUSpic.jpg';
 export default function ContactHome()
 {
     const [formData, setFormData] = useState({
@@ -21,14 +20,16 @@ export default function ContactHome()
     return(
         <div className="ContactHome">
             <div className="rightContainer">
-            <img src={cus} alt=""  />
-         </div>
+             <div className="headings">
+             <div className='sh-sub'>Stop Chasing Client Start Attracting Them</div>
+             <div className='sh-super'> Fill this quick form — we’ll handle the rest.</div>
+             </div>
+            </div>
             <div className="left-container">
                 {/* <h1>Contact US</h1> */}
                 <div className="formContent">
-                <p className='formHeading'>Stop Chasing Client Start Attracting Them</p>
+                
                 <p className='formsub'>Get Ready to convert leads, Not Random Clicks</p>
-                <p className='formfill'> Fill this quick form — we’ll handle the rest.</p>
                 </div>
                 <div className="formArea">
                 <form onSubmit={handleSubmit} className="contact-form-home">

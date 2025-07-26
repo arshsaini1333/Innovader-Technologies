@@ -1,19 +1,11 @@
     .ContactHome {
-        width: 100%;
         display: flex;
-        /* align-items: flex-start; */
         align-items: center;
-        /* gap: 2rem; */
-        /* background-color: #2fb2b2; */
-        padding-right: 2rem;
-        position: relative;
-        background-color: white;
-        z-index: 10;
+        justify-content: center;
     }
-    
-    .rightContainer {
-        width: 50%;
-    }
+    /* .rightContainer { */
+    /* width: 50%; */
+    /* } */
     
     .rightContainer img {
         height: 40rem;
@@ -50,7 +42,7 @@
         background-color: rgba(0, 0, 0, 0.034);
         position: relative;
         z-index: 2 !important;
-        width: 50%;
+        /* width: 50%; */
         display: flex;
         justify-content: center;
         align-items: center;

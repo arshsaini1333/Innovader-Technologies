@@ -5,7 +5,10 @@ import Services from '../Components/Services.jsx'
 import EnquireNow from '../Components/EnquireNowForm.jsx'
 import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
-import Testimonial from '../Components/Testimonial.jsx'
+// import Testimonial from '../Components/Testimonial.jsx'
+import HomeTestimonials from '../Components/HomeTestimonials.jsx'
+
+import HoverPanels from '../Components/HoverPanels.jsx'
 import Footer from '../Components/Footer.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
@@ -37,7 +40,9 @@ export default function Home()
         <OurClients/>
         <WantToSee/>      
         
-        <Testimonial/>
+        {/* <Testimonial/> */}
+        <HomeTestimonials/>
+        <HoverPanels/>
         <ContactHome/>
         <Footer/>
         </div>
