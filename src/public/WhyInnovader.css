@@ -1,0 +1,97 @@
+.WhyInnovader {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.why-counters {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* text-align: left; */
+}
+
+.why-innovader {
+    font-size: 1.1rem;
+    color: #1b70ef;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: #1b70ef29;
+    padding: 1rem 2rem;
+    /* border-radius: 2rem; */
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.why-innovader img {
+    height: 2.5rem;
+    width: 2rem;
+}
+
+.super-head {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.super-head span {
+    background-color: rgba(245, 245, 83, 0.781);
+    padding: 0 1rem;
+    font-weight: bold;
+}
+
+.count {
+    font-size: 3rem !important;
+    font-weight: bold;
+    color: #1b70ef;
+}
+
+.why-content {
+    margin: 1.5rem 0;
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+.counter {
+    padding: 1rem;
+}
+
+.counter span {
+    color: #1b70ef;
+    font-size: 1.2rem;
+}
+
+.why-btn {
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #1b70efda;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.why-btn:hover {
+    background-color: #1b70ef;
+}
+
+.why-cta {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.3rem;
+    /* color: #1b70ef; */
+}

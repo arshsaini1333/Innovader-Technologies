@@ -1,82 +1,41 @@
-import { useState } from 'react';
-import '../public/ContactHome.css';
-export default function ContactHome()
-{
-    const [formData, setFormData] = useState({
-        name: "",
-        phone: "",
-        email: "",
-        businessType: "",
-      });
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-      };
-    
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Submitted:", formData);
-        alert("Thank you! We'll be in touch.");
-      };
-    return(
-        <div className="ContactHome">
-            <div className="rightContainer">
-             <div className="headings">
-             <div className='sh-sub'>Stop Chasing Client Start Attracting Them</div>
-             <div className='sh-super'> Fill this quick form — we’ll handle the rest.</div>
-             </div>
-            </div>
-            <div className="left-container">
-                {/* <h1>Contact US</h1> */}
-                <div className="formContent">
-                
-                <p className='formsub'>Get Ready to convert leads, Not Random Clicks</p>
-                </div>
-                <div className="formArea">
-                <form onSubmit={handleSubmit} className="contact-form-home">
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-          value={formData.name}
-          onChange={handleChange}
-        />
+import React from 'react';
+import '../public/ContactHome.css'
 
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-          required
-          value={formData.phone}
-          onChange={handleChange}
-        />
+export default function ContactHome(){
+  return (
+    <div className="contact-wrapper">
+      <div className="contact-left">
+        <p className="contact-label">REACH OUT</p>
+        <h2 className="contact-heading">
+        Fill the Form – Let the Results Speak
+        </h2>
+        <p className="contact-subtext">
+        Get real leads, ready to talk and convert
+        </p>
+      </div>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-        />
-
-        <select
-          name="businessType"
-          required
-          value={formData.businessType}
-          onChange={handleChange}
-        >
-          <option value="">Select Business Type</option>
-          <option value="Broker">Broker</option>
-          <option value="Builder">Builder</option>
-          <option value="Property Consultant">Property Consultant</option>
-        </select>
-
-        <button type="submit">Let's Talk</button>
-      </form>
+      <div className="contact-form-card">
+        <h3 className="form-title">
+          Speak with our <strong className="bold-black">Digital</strong>{' '}
+          <strong className="bold-gradient">Professionals</strong>
+        </h3>
+        <form className="contact-form">
+          <input type="text" placeholder="Full Name *" required />
+          <div className="form-row">
+            <input type="email" placeholder="Enter Your Email *" required />
+            <input type="tel" placeholder="Enter phone number *" required />
+          </div>
+          <select required>
+            <option value="">Select Service looking for</option>
+            <option value="web">Website Design</option>
+            <option value="seo">SEO</option>
+            <option value="ads">Digital Ads</option>
+          </select>
+          <textarea placeholder="Leave a message" rows="4"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </div>
-    </div>
-         
-</div>
-    )
-}
+  );
+};
+

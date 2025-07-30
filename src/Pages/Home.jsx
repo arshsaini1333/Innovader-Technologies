@@ -7,9 +7,10 @@ import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
 // import Testimonial from '../Components/Testimonial.jsx'
 import HomeTestimonials from '../Components/HomeTestimonials.jsx'
-
-import HoverPanels from '../Components/HoverPanels.jsx'
+import WhyInnovader from '../Components/WhyInnovader.jsx'
 import Footer from '../Components/Footer.jsx'
+
+import OurServices from '../Components/OurServices.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
 
@@ -36,14 +37,17 @@ export default function Home()
         <HomeRight/>      
         </div>
         <div className="Parallax">
-        <Services />
         <OurClients/>
+        <WhyInnovader/>
+
+        <OurServices/>
+        {/* <Services /> */}
         <WantToSee/>      
         
         {/* <Testimonial/> */}
         <HomeTestimonials/>
         {/* <HoverPanels/> */}
-        <ContactHome/>
+        {/* <ContactHome/> */}
         <Footer/>
         </div>
         <EnquireNow isShow={isShow} popUp={popUp}/>

@@ -23,8 +23,8 @@ export default function OurClients(){
   return (
     <div className="slider-wrapper"  >
       <div className="service-headings">
-        <div className="sh-sub">Our Clients</div>
-        <div className="sh-super">We partner with businesses of all sizes to fuel their digital growth</div>
+        <div className="sh-sub">Loved & Trusted By</div>
+        {/* <div className="sh-super">We partner with businesses of all sizes to fuel their digital growth</div> */}
       </div>
       <div
         className="slider-track"

@@ -1,0 +1,100 @@
+.OurServices {
+    margin: 5rem auto;
+    width: 80%;
+}
+
+.service-head {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.service-head .heading {
+    font-size: 2rem;
+    color: #1b70ef;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.service-context span {
+    font-weight: bold;
+}
+
+.s-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+}
+
+.s-image {
+    /* width: 25%; */
+    /* border: 2px solid red; */
+    width: 25%;
+}
+
+.s-image img {
+    /* width: 100%; */
+    height: 10rem;
+    width: 100%;
+}
+
+.s-content {
+    /* border: 2px solid green; */
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.s-card:nth-child(odd) {}
+
+.s-card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.s-name {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.s-cta {
+    color: #1b70ef;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: centers;
+    gap: 10px;
+}
+
+.s-cta .arr {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.s-card:nth-child(even) .s-cta {
+    flex-direction: row-reverse;
+    .arr {
+        transform: rotate(180deg);
+        margin-top: 6px;
+    }
+}
