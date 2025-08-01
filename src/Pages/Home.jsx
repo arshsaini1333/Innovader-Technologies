@@ -1,7 +1,6 @@
 import HomeLeft from '../Components/HomeLeft.jsx'
 import HomeRight from '../Components/HomeRight.jsx'
 import '../public/Home.css'
-import Services from '../Components/Services.jsx'
 import EnquireNow from '../Components/EnquireNowForm.jsx'
 import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
@@ -39,15 +38,10 @@ export default function Home()
         <div className="Parallax">
         <OurClients/>
         <WhyInnovader/>
-
         <OurServices/>
-        {/* <Services /> */}
         <WantToSee/>      
-        
-        {/* <Testimonial/> */}
         <HomeTestimonials/>
-        {/* <HoverPanels/> */}
-        {/* <ContactHome/> */}
+        <ContactHome/>
         <Footer/>
         </div>
         <EnquireNow isShow={isShow} popUp={popUp}/>

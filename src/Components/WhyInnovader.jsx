@@ -8,7 +8,7 @@ export default function WhyInnovader() {
   return (
     <div className='WhyInnovader'>
       <div className="why-innovader">
-        <img src={logo} alt="" />
+        {/* <img src={logo} alt="" /> */}
         <span>Why Innovader</span>
       </div>
       <div className="super-head">
@@ -39,9 +39,13 @@ export default function WhyInnovader() {
         <p>Of Industry Experience</p>
         </div>
     </div>
-    {/* <div className="why-cta"> <span>Real Estate Leads</span> <span>Verified Buyers</span> <span>Lower CPR</span> */}
-   {/* </div> */}
+    <div className="why-cta"> 
+       <div className='spans'>
+    <span>Real Estate Leads</span> <span>Verified Buyers</span> <span>Lower CPR</span> 
+       </div>
    <button className='why-btn'>Scale With Us Today</button>
+
+   </div> 
     </div>
   )
 }

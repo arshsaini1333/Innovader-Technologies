@@ -12,7 +12,7 @@
     margin-bottom: 3rem;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     gap: 1rem;
 }
 
@@ -27,6 +27,8 @@
     color: #1b70ef;
     font-weight: bolder;
     text-transform: uppercase;
+    text-align: left;
+    width: 100%;
 }
 
 .service-context span {
@@ -60,8 +62,6 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-
-.s-card:nth-child(odd) {}
 
 .s-card:nth-child(even) {
     display: flex;

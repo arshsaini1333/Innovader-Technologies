@@ -158,7 +158,7 @@ const ThreeDCarousel = () => {
         </div>
 
         {/* Navigation Buttons */}
-        <button
+        {/* <button
           onClick={prevSlide}
           className="nav-button nav-left"
           aria-label="Previous slide"
@@ -172,7 +172,7 @@ const ThreeDCarousel = () => {
           aria-label="Next slide"
         >
           <ChevronRight size={24} />
-        </button>
+        </button> */}
 
         {/* Indicators */}
         {/* <div className="indicators">

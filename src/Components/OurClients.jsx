@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Swiper from "swiper";
 import c1 from '../assets/c1.png'
 import c2 from '../assets/c2.png'
 import c3 from '../assets/c6.png'
@@ -7,10 +6,14 @@ import c4 from '../assets/c7.png'
 import c5 from '../assets/c8.png'
 import c6 from '../assets/c15.png'
 import c7 from '../assets/c16.png'
-import AOS from 'aos';
+import c8 from '../assets/c17.webp'
+import c9 from '../assets/c19.webp'
+import c10 from '../assets/c20.webp'
+import c11 from '../assets/c21.webp'
+// import c12 from '../assets/c24.webp'
 import 'aos/dist/aos.css';
 export default function OurClients(){
-  const images = [c1, c2, c3, c4, c5, c6, c7,c1, c2, c3, c4, c5, c6, c7];
+  const images = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11,c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11,c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11];
   const sliderRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
