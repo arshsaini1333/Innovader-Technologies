@@ -136,7 +136,7 @@ const HomeTestimonials = () => {
 
   return (
     <>
-    <div className="testimonial-wrapper" data-aos="fade-up">
+    <div className="testimonial-wrapper" >
       <div className="text-block">
         <div className='ht-sub'>What Our Clients Speak for Us</div>
         <div className='ht-super'>From consultation to completion, see how we deliver peace of mind.</div>

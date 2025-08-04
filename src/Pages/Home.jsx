@@ -7,6 +7,7 @@ import WantToSee from '../Components/WantToSee.jsx'
 // import Testimonial from '../Components/Testimonial.jsx'
 import HomeTestimonials from '../Components/HomeTestimonials.jsx'
 import WhyInnovader from '../Components/WhyInnovader.jsx'
+import Results from '../Components/Results.jsx'
 import Footer from '../Components/Footer.jsx'
 
 import OurServices from '../Components/OurServices.jsx'
@@ -39,7 +40,8 @@ export default function Home()
         <OurClients/>
         <WhyInnovader/>
         <OurServices/>
-        <WantToSee/>      
+        <WantToSee/>     
+        <Results/> 
         <HomeTestimonials/>
         <ContactHome/>
         <Footer/>
