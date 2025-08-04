@@ -37,6 +37,9 @@ New Delhi (110074)</p>
             <option value="web">Website Design</option>
             <option value="seo">SEO</option>
             <option value="ads">Digital Ads</option>
+            <option value="brand-stat">Brand Strategy</option>
+            <option value="smm">Social Media Marketing</option>
+            <option value="tlg">Targeted Lead Generation</option>
           </select>
           <textarea placeholder="Leave a message" rows="4"></textarea>
           <button type="submit">Submit</button>

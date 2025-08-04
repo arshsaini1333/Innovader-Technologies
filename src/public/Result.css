@@ -3,11 +3,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    height: fit-content;
 }
 
 .colum {
     /* border: 2px solid red; */
-    height: 33rem;
+    height: 35rem;
     display: flex;
     justify-content: space-between;
     padding: 3rem 0;
@@ -19,6 +20,7 @@
 
 .col2 {
     display: flex;
+    height: fit-content !important;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -71,4 +73,5 @@
     font-style: normal;
     text-align: center;
     color: #333;
+    overflow: hidden;
 }
