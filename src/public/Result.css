@@ -61,3 +61,11 @@
         transform: translateY(0) translateX(0) rotate(-15deg);
     }
 }
+
+.col2 p {
+    text-decoration: none;
+    font-size: 4rem;
+    font-style: normal;
+    text-align: center;
+    color: #333;
+}

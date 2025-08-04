@@ -25,7 +25,7 @@ const Results = () => {
       </div>
       <div className="colum col2">
       <div className="wn-btn wn-col">
-              <p>Want results like these?</p>
+              <p>Want Results Like These?</p>
               <button><span>Lets Talk</span><CallIcon/></button>
             </div>
       </div>
