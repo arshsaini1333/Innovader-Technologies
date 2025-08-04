@@ -11,10 +11,11 @@ import c9 from '../assets/c19.webp'
 import c10 from '../assets/c20.webp'
 import c11 from '../assets/c21.webp'
 import c12 from '../assets/c22.webp'
+import c13 from '../assets/c23.png'
 // import c12 from '../assets/c24.webp'
 import 'aos/dist/aos.css';
 export default function OurClients(){
-  const images = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11,c12, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12,  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11,c12, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12];
+  const images = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11,c12, c13, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13,  c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11,c12, c13, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13];
   const sliderRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
