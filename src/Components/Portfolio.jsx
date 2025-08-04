@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import '../public/ThreeDCarousel.css';
 import wt1 from '../assets/wt1.png';
 import wt2 from '../assets/wt2.jpg';
@@ -7,6 +6,19 @@ import wt3 from '../assets/wt3.png';
 import wt4 from '../assets/wt4.jpg';
 import wt5 from '../assets/wt5.jpg';
 import wt6 from '../assets/wt6.webp';
+
+// new images
+import w1 from '../assets/work/w1.png'
+import w2 from '../assets/work/w2.png'
+import w3 from '../assets/work/w3.png'
+import w4 from '../assets/work/w4.png'
+import w5 from '../assets/work/w5.png'
+import w6 from '../assets/work/w6.png'
+import w7 from '../assets/work/w7.png'
+import w8 from '../assets/work/w8.png'
+import w9 from '../assets/work/w9.png'
+import w10 from '../assets/work/w10.png'
+import w11 from '../assets/work/w1.png'
 
 const ThreeDCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -58,6 +70,8 @@ const ThreeDCarousel = () => {
     },
   ];
 
+
+  const images = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11]
   // Autoplay functionality
   useEffect(() => {
     if (isAutoplay) {
@@ -124,7 +138,7 @@ const ThreeDCarousel = () => {
       <div className="carousel-wrapper">
         {/* Carousel Container */}
         <div className="carousel-stage">
-          {cards.map((card, index) => {
+          {images.map((card, index) => {
             const position = getCardPosition(index);
             return (
               <div
@@ -132,8 +146,11 @@ const ThreeDCarousel = () => {
                 className={`carousel-card ${position}`}
               >
                 <div className="card-inner">
+                <div className="card-emoji">
+                      <img src={card} alt={card.title} />
+                  </div>
                   {/* Card Content */}
-                  <div className="card-content">
+                  {/* <div className="card-content">
                     <div className="card-emoji">
                       <img src={card.image} alt={card.title} />
                     </div>
@@ -148,7 +165,7 @@ const ThreeDCarousel = () => {
                         Let's Discuss Your Project
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                   {/* Shine Effect */}
                   <div className={`card-shine ${position === 'center' ? 'active' : ''}`} />
                 </div>

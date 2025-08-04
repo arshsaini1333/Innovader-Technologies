@@ -1,11 +1,22 @@
 import React from 'react';
 import '../public/ContactHome.css'
-
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 export default function ContactHome(){
   return (
     <div className="contact-wrapper-home">
       <div className="contact-left">
-       
+       <div className="cl-head">Get Ready to Elevate Your Business! 🚀</div>
+       <div className="cl-sub-head">Partner with our marketing experts to refine your goals. We’ll enhance your brand’s visibility, generate quality leads, and drive sales with powerful digital strategies. Let’s grow together!</div>
+
+       <div className="cl-contacts">
+        <p><CallIcon/> +91 8447149389</p>
+        <p><EmailIcon/> Hr@innovader.in</p>
+        <p><LocationOnIcon/> E-93/1, SOUTH, near SUMAN CHOWK,
+Block D, Chhatarpur Extension, Chhatarpur
+New Delhi Delhi 110074</p>
+       </div>
       </div>
 
       <div className="contact-form-card">

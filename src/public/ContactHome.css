@@ -12,12 +12,14 @@
     background: url('../assets/contactBG.webp');
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: space-around;
 }
 
 .contact-left {
     flex: 1;
     padding-right: 2rem;
-    max-width: 50%;
+    max-width: 40%;
+    margin-top: 2rem;
 }
 
 .contact-label {
@@ -41,17 +43,17 @@
 }
 
 .contact-form-card {
-    flex: 1;
+    /* flex: 1; */
     background: transparent !important;
     border: 2px solid #0873ac;
     /* top: -15%; */
     border-radius: 1rem;
     padding: 2rem;
-    /* max-width: 50%; */
     /* margin-top: -3rem; */
     position: relative;
     top: -5rem;
     z-index: inherit;
+    width: 50% !important;
 }
 
 .contact-form-home {
@@ -112,6 +114,35 @@
 
 .contact-form-home button:hover {
     background: #1b8cd4;
+}
+
+.cl-head {
+    font-size: 2.2rem;
+    font-weight: bolder;
+}
+
+.cl-sub-head {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.cl-contacts {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 3rem;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cl-contacts p {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 0.5rem;
 }
 
 @media screen and (max-width: 960px) {

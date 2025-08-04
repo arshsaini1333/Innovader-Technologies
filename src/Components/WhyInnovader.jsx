@@ -23,7 +23,7 @@ export default function WhyInnovader() {
       </div>
     <div className="why-counters">
         <div className="counter">
-        <ScrollCounter target={1} duration={1000} /> <span>Crore +</span>
+        <ScrollCounter target={1} duration={1000} /> <span>Cr +</span>
         <p>Ad Spend Managed</p>
         </div>
         <div className="counter">
