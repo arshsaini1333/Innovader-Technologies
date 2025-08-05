@@ -1,5 +1,5 @@
 .About {
-    margin-top: 6rem;
+    /* margin-top: 5rem; */
 }
 
 .abt-container {
@@ -12,6 +12,27 @@
     /* height: 100vh; */
 }
 
+.abt-head {
+    /* padding-top: 6rem; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/abtbg3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.abt-head::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.493);
+    z-index: 2;
+}
+
 .abtimage {
     width: 100%;
     margin-top: 2.5rem;
@@ -22,16 +43,31 @@
     height: 400px;
 }
 
-.abt-head {
-    font-size: 3.5rem;
-    color: #1b70ef;
-    font-weight: bold;
+.abth-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    height: 100%;
+}
+
+.head-super {
+    margin-top: 6rem;
+    z-index: 15 !important;
+    font-size: 5.5rem;
+    /* text-transform: uppercase; */
+    /* color: #1b70ef; */
+    color: white;
+    font-weight: bolder;
 }
 
 .head-sub {
+    opacity: 1;
+    z-index: 5 !important;
     font-size: 1.5rem;
     font-weight: bolder;
-    color: #333;
+    color: white !important;
 }
 
 .abt-subhead {
@@ -69,6 +105,7 @@
 
 .founders {
     display: flex;
+    flex-direction: column;
     gap: 5rem;
     padding: 0 2rem;
 }
@@ -83,6 +120,11 @@
     padding: 1rem 0;
 }
 
+.co {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
 .f-image {
     display: flex;
     justify-content: center;
@@ -94,9 +136,8 @@
 }
 
 .f-image img {
-    height: 22rem;
-    /* width: 14rem; */
-    width: 15rem !important;
+    height: 25rem;
+    width: 25rem;
 }
 
 .f-content {
@@ -128,4 +169,8 @@
 
 .fc-content {
     font-size: 0.9rem;
+}
+
+.co .f-content {
+    text-align: right;
 }

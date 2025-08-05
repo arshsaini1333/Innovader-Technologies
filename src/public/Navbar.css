@@ -1,7 +1,7 @@
 .Navbar {
     background-color: white !important;
     color: #1b70ef;
-    z-index: 1 !important;
+    z-index: 10 !important;
     /* background-color: red !important; */
 }
 

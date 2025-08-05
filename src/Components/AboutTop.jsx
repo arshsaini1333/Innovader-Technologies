@@ -3,11 +3,19 @@ import img from '../assets/about.jpg'
 function AboutTop() {
   return (
     <div className='abt-container'>
-      <div className="abt-head">Welcome to Innovader Technology  <div className="head-sub">Delhi’s leading digital powerhouse built exclusively for the real estate industry.</div>
+      <div className="abt-head">
+          <div className="abth-content">
+          <div className="head-super">
+             Innovader Technologies
+          </div>  
+          <div className="head-sub">
+            Delhi’s leading digital powerhouse built exclusively for the real estate industry.
+          </div>
+          </div>
       </div>
-      <div className="abtimage">
+      {/* <div className="abtimage">
         <img src={img} alt="" />
-      </div>
+      </div> */}
       <div className="abt-subhead">
         We don’t just run campaigns.
         We generate real, high-quality leads that convert into sales.
