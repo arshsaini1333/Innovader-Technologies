@@ -142,9 +142,9 @@ const HomeTestimonials = () => {
         <div className='ht-super'>From consultation to completion, see how we deliver peace of mind.</div>
         
         <div className="left-column">
-       <CounterCircle target={200} label="Projects" />
-       <CounterCircle target={50} label="Happy Clients" />
-      <CounterCircle target={70} label="NPS Score"  />
+       <CounterCircle target={60} label="Projects" suffix={''}/>
+       <CounterCircle target={40} label="Happy Clients" suffix={''}/>
+      <CounterCircle target={100} label="Site Visit"  suffix={'K'}/>
       </div>
  <p><FormatQuoteIcon className='fq-start fq'/>Our clients’ success stories reflect our commitment to excellence. See how we’ve helped them find their dream homes, sustainable investments, and perfect getaways.<FormatQuoteIcon className='fq'/></p>
       <div className="ht-cta">

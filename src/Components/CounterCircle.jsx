@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../public/HomeTestimonials.css';
 
-const CounterCircle = ({ target, label, suffix = '' }) => {
+const CounterCircle = ({ target, label, suffix}) => {
   const [count, setCount] = useState(0);
   const ref = useRef();
   const observer = useRef();
@@ -37,7 +37,7 @@ const CounterCircle = ({ target, label, suffix = '' }) => {
 
   return (
     <div className="counter-circle" ref={ref}>
-      <h2>{count}+{suffix}</h2>
+      <h2>{count}{suffix}+</h2>
       <p>{label}</p>
     </div>
   );
