@@ -106,7 +106,7 @@
 .founders {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    /* gap: 2rem; */
     padding: 0 2rem;
 }
 
@@ -133,11 +133,14 @@
     /* border: 2px solid green; */
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.256);
     padding: 1rem;
+    border-radius: 50%;
 }
 
 .f-image img {
     height: 25rem;
     width: 25rem;
+    border-radius: 50%;
+    /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.256); */
 }
 
 .f-content {
