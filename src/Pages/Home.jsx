@@ -44,7 +44,7 @@ export default function Home()
         <Results/> 
         <HomeTestimonials/>
         <ContactHome/>
-        <Footer/>
+        {/* <Footer/> */}
         </div>
         <EnquireNow isShow={isShow} popUp={popUp}/>
         </>
