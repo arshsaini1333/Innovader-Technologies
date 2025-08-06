@@ -21,7 +21,7 @@ export default function AboutTeam() {
             <p className='fc-content'>A certified expert in <strong>Google Ads</strong> and a master of performance marketing, Arvinder started Innovader Technology 3 years ago with a mission to help real estate brands generate high-converting leads through smart ad strategies. He holds a PGDM and a Master’s in Performance Marketing. With hands-on experience running paid campaigns for top real estate clients, Arvinder is known for turning ad budgets into booked site visits.</p>
             <div className='f-links'>
               <a href="https://www.linkedin.com/in/saini-singh-arvinder/" target='_blank'><LinkedInIcon sx={{ fontSize: 35, color:'#1b70ef' }}/></a>
-              <a href="" target='_blank'><InstagramIcon sx={{ fontSize: 35, color:'#1b70ef' }}/></a>
+              <a href="https://www.instagram.com/_avi_saini_?igsh=MTVja2U3MXE3N3h0eQ==" target='_blank'><InstagramIcon sx={{ fontSize: 35, color:'#1b70ef' }}/></a>
             </div>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function AboutTeam() {
         </div>
         <div className="f-content">
             <div className="f-name">
-                <p className="name">Tanya</p>
+                <p className="name">Varsha</p>
                 <p className="dest">Co Founder</p>
             </div>
             <p className='fc-content'>
