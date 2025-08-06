@@ -1,13 +1,16 @@
-import InstagramEmbed from "../Components/Iframe"
 import '../public/Project.css'
 import InstaPhotos from "../Components/InstaPhotos"
-import ScrollControlledHorizontal from "../Components/Scrolling"
+import F1HorizontalScroll from "../Components/Scrolling"
 export default function OurWork()
 {
     return(
     <div className="project">
+      <F1HorizontalScroll />
         <InstaPhotos/>    
-        <ScrollControlledHorizontal/>    
+        
+
+
+        
     </div>
     )
 }
