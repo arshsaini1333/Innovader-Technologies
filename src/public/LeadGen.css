@@ -1,0 +1,283 @@
+.lead-gen-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    color: white;
+    background: url('../assets/leadgen.avif');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.lead-gen-top::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.783);
+    z-index: 2;
+}
+
+.lg-head-content {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+.lg-header {
+    width: 100%;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.lg-sub-header {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lead-gen-cta {
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.lg-hs-content {
+    width: 70%;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.lg-why-block {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lgw-head {
+    text-align: center;
+    font-size: 3rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.lgw-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 2rem;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.lgw-card {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 5rem; */
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.lgwc-content {
+    width: 45%;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.lgwc-image {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.153);
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+
+.lgw-card img {
+    /* height: 25rem; */
+    /* width: 23rem; */
+    width: 100%;
+    /* border: 2px solid red; */
+    /* box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.525); */
+    border-radius: 1rem;
+}
+
+.lgwc-cta {
+    border: none;
+    background-color: #007bff;
+    padding: 0.7rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #007bff;
+    transition: all 0.5s ease-in-out;
+    gap: 0.5rem;
+}
+
+.lgwc-cta:hover {
+    background-color: transparent;
+    color: #007bff;
+}
+
+.lg-no {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    background-color: rgb(234, 243, 249);
+}
+
+.lgn-header {
+    text-align: center;
+    color: #007bff;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.lgn-header span {
+    /* color: #333; */
+    font-weight: bolder;
+    font-size: 5rem;
+    font-style: italic;
+}
+
+.lgn-cards {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lgn-cards>*:nth-child(odd) {
+    background-color: #007bff;
+}
+
+.lgn-cards>*:nth-child(even) {
+    background-color: #333;
+}
+
+.lgn-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid green; */
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    gap: 1.5rem;
+    width: 100%;
+    height: 18rem;
+    padding-top: 1.5rem;
+}
+
+.lgnc-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.lgnc-desc {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.lg-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    flex-direction: column;
+}
+
+.lgs-header {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.lgs-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 3rem;
+}
+
+.lgs-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* border: 2px solid red; */
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.269);
+    padding: 1rem;
+    width: 30%;
+    min-height: 16rem;
+    text-align: center;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+}
+
+.lgsc-name {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.lgsc-icon {
+    color: white;
+    background-color: #007bff;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+}
+
+.lgsc-name span {
+    font-size: 1rem;
+    display: block;
+    color: #007bff;
+}
+
+.lgsc-desc {
+    font-size: 1rem;
+}

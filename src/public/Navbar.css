@@ -1,14 +1,14 @@
 .Navbar {
     background-color: white !important;
     color: #1b70ef;
-    z-index: 10 !important;
+    z-index: 105 !important;
     /* background-color: red !important; */
 }
 
 .nav-links {
     color: #333;
     text-decoration: none;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     font-weight: 500 !important;
     text-transform: capitalize !important;
     transition: 0.5s all ease;
@@ -18,6 +18,7 @@
     display: inline-block;
     /* border: 1px solid red; */
     padding: 0.5rem 1rem;
+    /* border: 2px solid red !important; */
 }
 
 .nav-links:hover {
@@ -61,6 +62,7 @@ img {
     align-items: center !important;
     width: 70%;
     gap: 1.5rem;
+    color: #333 !important;
 }
 
 .banner {
@@ -122,6 +124,76 @@ img {
     background-color: white !important;
 }
 
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: black;
+    min-width: 180px;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-size: 1rem !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
+    font-size: 1rem !important;
+}
+
+
+/* Add to your existing Navbar.css file */
+
+
+/* Style for the button in the navbar */
+
+
+/* Style for the popover card */
+
+.services-popover-card {
+    margin-top: 15px;
+    /* Pushes the card down from the navbar */
+    border-radius: 8px !important;
+    /* Overrides default square corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    /* Adds a modern shadow */
+    background-color: #ffffff;
+}
+
+
+/* Optional: Remove padding from the CardContent if the List provides enough */
+
+.services-popover-card .MuiCardContent-root {
+    padding: 8px !important;
+}
+
 @media screen and (max-width:1100px) {
     .nav-link-container {
         width: 100%;
@@ -132,7 +204,7 @@ img {
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:601px) {
     .banner {
         display: none !important;
     }
@@ -143,6 +215,9 @@ img {
     }
     .nav-links:hover::after {
         width: 40%;
+    }
+    .nav-links {
+        padding-left: 0;
     }
     .li-container {
         display: flex !important;
@@ -159,4 +234,21 @@ img {
         padding-left: 1rem !important;
         padding-right: 0 !important;
     }
+}
+
+.css-1uent87-MuiButtonBase-root-MuiButton-root {
+    color: #333 !important;
+    font-family: "Merriweather", serif !important;
+    /* border: 2px solid green !important; */
+    background-color: white !important;
+    font-size: 1rem !important;
+}
+
+.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
+    width: 100% !important;
+    /* margin-left: 1rem !important; */
+}
+
+.css-rizt0-MuiTypography-root {
+    font-family: "Merriweather", serif !important;
 }

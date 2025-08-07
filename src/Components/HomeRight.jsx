@@ -16,6 +16,8 @@ import p13 from '../assets/p13.jpg';
 import p14 from '../assets/p14.jpg';
 import p15 from '../assets/p15.jpg';
 import p16 from '../assets/p16.jpg';
+import p17 from '../assets/p17.jpg';
+import p18 from '../assets/p18.jpg';
 
 
 
@@ -38,6 +40,7 @@ const row1Images = [
   p9,
   p10,
   p16,  
+  p17
 ];
 const row2Images = [
   // Add image URLs here (repeat as needed for looping)
@@ -74,6 +77,7 @@ const row3Images = [
   p8,
   p9,
   p10,
+  p18
   
 ];
 
