@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../public/LeadGen.css'
-import realE from '../../assets/realEstate.jpeg'
 import WifiCallingIcon from '@mui/icons-material/WifiCalling';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import QueueIcon from '@mui/icons-material/Queue';

@@ -91,6 +91,7 @@ export default function BrandStratergy() {
         <div className="bstt-header">
         The Real Impact
         </div>
+        
 
             <div className="bstt-cards">
               <div className="bstt-card">

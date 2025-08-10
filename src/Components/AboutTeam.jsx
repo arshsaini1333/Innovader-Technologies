@@ -6,7 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 export default function AboutTeam() {
   return (
     <div className='about-team'>
-      <div className="team-head">The Minds Behind Innovader Technology</div>
+      <div className="team-head">The Minds Behind Innovader Technologies</div>
 
       <div className="founders">
       <div className="founder">
