@@ -1,6 +1,6 @@
 .OurServices {
     margin: 5rem auto;
-    width: 80%;
+    width: 90%;
 }
 
 .service-head {
@@ -96,5 +96,22 @@
     .arr {
         transform: rotate(180deg);
         margin-top: 6px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .service-head .heading {
+        font-size: 1.5rem;
+    }
+    .s-image {
+        width: 50%;
+    }
+    .s-card:nth-child(even) {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .s-card:nth-child(odd) {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

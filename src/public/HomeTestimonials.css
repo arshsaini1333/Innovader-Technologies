@@ -252,7 +252,7 @@
     }
     .scroll-up .column-inner {
         animation-name: scrollUp;
-        animation-duration: 4s;
+        animation-duration: 60s;
     }
     .column:first-child {
         display: block !important;
@@ -260,6 +260,9 @@
 }
 
 @media screen and (max-width: 1025px) {
+    .text-block {
+        width: 100%;
+    }
     .testimonial-wrapper {
         flex-direction: column;
         align-items: center;
@@ -267,7 +270,7 @@
     .left-column {
         margin-top: 20px;
         padding-top: 0;
-        gap: 10px;
+        gap: 5px;
     }
     .counter-circle {
         width: 110px;
@@ -284,10 +287,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
     .scroll-up .column-inner {
         animation-name: scrollUp;
-        animation-duration: 6s;
+        animation-duration: 15s;
     }
     .scroll-down .column-inner {
         animation-name: scrollDown;
@@ -299,5 +303,11 @@
     .column:nth-child(1),
     .column:nth-child(2) {
         display: block;
+    }
+    .ht-sub {
+        font-size: 2rem;
+    }
+    .ht-super {
+        font-weight: 1rem;
     }
 }

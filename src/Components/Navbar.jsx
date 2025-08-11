@@ -1,36 +1,18 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-
-// MUI Imports
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Collapse from '@mui/material/Collapse'; // Import Collapse for the drawer
-import CssBaseline from '@mui/material/CssBaseline';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Popover from '@mui/material/Popover';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-
-// Icon Imports
+import {
+  AppBar, Box, Button, Card, CardContent, Collapse, CssBaseline,
+  Divider, Drawer, IconButton, List, ListItem, ListItemButton,
+  ListItemText, Popover, Toolbar, Typography
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import ExpandLess from '@mui/icons-material/ExpandLess'; // Icon for open sub-menu
-import ExpandMore from '@mui/icons-material/ExpandMore'; // Icon for closed sub-menu
+import ExpandLess from '@mui/icons-material/ExpandLess';
+import ExpandMore from '@mui/icons-material/ExpandMore';
 
-// Asset and CSS Imports
-import logo from '../assets/logo.png'
-import '../public/Navbar.css'
-
+import logo from '../assets/logo.png';
+import '../public/Navbar.css';
 
 export default function Navbar(props) {
   const drawerWidth = 320;
@@ -48,23 +30,21 @@ export default function Navbar(props) {
   const services = [
     { name: 'Web Development', path: '/services/web-development' },
     { name: 'Brand Strategy', path: '/services/brand-stratergy' },
-    { name: 'Lead Generation', path: '/services/lead-generation' }
+    { name: 'Lead Generation', path: '/services/lead-generation' },
+    { name: 'Social Media Marketing', path: '/services/social-media-markte' },
+    { name: 'Meta Ads', path: '/services/meta-ads' },
+    { name: 'Google Ads', path: '/services/google-ads' },
+    { name: 'Search Engine Optimization', path: '/services/seo' },
   ];
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  // --- State for desktop popover ---
   const [anchorEl, setAnchorEl] = React.useState(null);
-  
-  // --- State for mobile drawer collapse ---
   const [servicesOpen, setServicesOpen] = React.useState(false);
-
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
-  
-  // --- Handlers for desktop popover ---
+
   const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -72,8 +52,7 @@ export default function Navbar(props) {
   const handlePopoverClose = () => {
     setAnchorEl(null);
   };
-  
-  // --- Handler for mobile drawer collapse ---
+
   const handleServicesClick = () => {
     setServicesOpen(!servicesOpen);
   };
@@ -81,7 +60,6 @@ export default function Navbar(props) {
   const open = Boolean(anchorEl);
 
   const drawer = (
-    // We removed onClick from the Box to handle it on each item for better control
     <Box sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }} className='banner-d'>
         <img src={logo} alt="Innovader Technologies Logo"/>
@@ -90,7 +68,6 @@ export default function Navbar(props) {
       <Divider />
       <List className='li-container'>
         {navItems.map((item) => (
-          // --- Conditional rendering for "Our Services" in the drawer ---
           item === 'Our Services' ? (
             <React.Fragment key={item}>
               <ListItemButton onClick={handleServicesClick}>
@@ -102,10 +79,10 @@ export default function Navbar(props) {
                   {services.map((service) => (
                     <ListItemButton
                       key={service.name}
-                      sx={{ pl: 4 }} // Indent the sub-item
+                      sx={{ pl: 4 }}
                       component={NavLink}
                       to={service.path}
-                      onClick={handleDrawerToggle} // Close drawer on navigation
+                      onClick={handleDrawerToggle}
                     >
                       <ListItemText primary={service.name} />
                     </ListItemButton>
@@ -118,7 +95,7 @@ export default function Navbar(props) {
               <ListItemButton
                 component={NavLink}
                 to={paths[item]}
-                onClick={handleDrawerToggle} // Close drawer on navigation
+                onClick={handleDrawerToggle}
               >
                 <ListItemText className='nav-links' primary={item} />
               </ListItemButton>
@@ -135,29 +112,47 @@ export default function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }} >
       <CssBaseline />
-      <AppBar component="nav" className="Navbar"  >
-        <Toolbar >
+      <AppBar component="nav" className="Navbar">
+        <Toolbar>
+          {/* Hamburger Icon */}
           <IconButton
             color="inherit"
             aria-label="open drawer"
             edge="start"
             className='d-btn'
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{
+              mr: 2,
+              display: { xs: 'block', sm: 'block', md: 'block' },
+              '@media (min-width:1101px)': { display: 'none' } // hide above 1100px
+            }}
           >
             <MenuIcon />
           </IconButton>
+
+          {/* Logo for mobile */}
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'block', sm: 'block', md: 'block' },
+              '@media (min-width:1101px)': { display: 'none' }
+            }}
             className='banner'
           >
             <img src={logo} alt="Innovader Technologies Logo"/>
             <p>Innovader Technologies</p>
           </Typography>
 
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }} className="nav-link-container" >
+          {/* Desktop Nav Links */}
+          <Box
+            sx={{
+              display: { xs: 'none', sm: 'none', md: 'none' },
+              '@media (min-width:1101px)': { display: 'flex' }
+            }}
+            className="nav-link-container"
+          >
             {navItems.map((item) => (
               item === 'Our Services' ? (
                 <React.Fragment key={item}>
@@ -182,7 +177,7 @@ export default function Navbar(props) {
         </Toolbar>
       </AppBar>
 
-      {/* --- Desktop Popover Card for Services --- */}
+      {/* Desktop Popover */}
       <Popover
         id="services-popover"
         open={open}
@@ -193,25 +188,28 @@ export default function Navbar(props) {
         PaperProps={{ className: 'services-popover-card' }}
       >
         <Card>
-            <CardContent>
-                <List>
-                    {services.map((service) => (
-                        <ListItem key={service.name} disablePadding>
-                           <ListItemButton
-                             component={NavLink}
-                             to={service.path}
-                             onClick={handlePopoverClose}
-                           >
-                            <ListItemText primaryTypographyProps={{ fontSize: '1rem', fontFamily: '"Merriweather", sans-serif' }} primary={service.name}/>
-                           </ListItemButton>
-                        </ListItem>
-                    ))}
-                </List>
-            </CardContent>
+          <CardContent>
+            <List>
+              {services.map((service) => (
+                <ListItem key={service.name} disablePadding>
+                  <ListItemButton
+                    component={NavLink}
+                    to={service.path}
+                    onClick={handlePopoverClose}
+                  >
+                    <ListItemText
+                      primaryTypographyProps={{ fontSize: '1rem', fontFamily: '"Merriweather", sans-serif' }}
+                      primary={service.name}
+                    />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </CardContent>
         </Card>
       </Popover>
 
-      {/* --- Mobile Drawer --- */}
+      {/* Mobile Drawer */}
       <nav>
         <Drawer
           container={container}
@@ -220,7 +218,8 @@ export default function Navbar(props) {
           onClose={handleDrawerToggle}
           ModalProps={{ keepMounted: true }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
+            display: { xs: 'block', sm: 'block', md: 'block' },
+            '@media (min-width:1101px)': { display: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
           }}
         >
@@ -230,7 +229,3 @@ export default function Navbar(props) {
     </Box>
   );
 }
-
-Navbar.propTypes = {
-  window: PropTypes.func,
-};

@@ -149,23 +149,7 @@ const ThreeDCarousel = () => {
                 <div className="card-emoji">
                       <img src={card} alt={card.title} />
                   </div>
-                  {/* Card Content */}
-                  {/* <div className="card-content">
-                    <div className="card-emoji">
-                      <img src={card.image} alt={card.title} />
-                    </div>
-                    <div className="card-text">
-                      <h2 className="card-title">
-                        {card.title}
-                      </h2>
-                      <p className="card-description">
-                        {card.description}
-                      </p>
-                      <button className="project-button">
-                        Let's Discuss Your Project
-                      </button>
-                    </div>
-                  </div> */}
+                  
                   {/* Shine Effect */}
                   <div className={`card-shine ${position === 'center' ? 'active' : ''}`} />
                 </div>

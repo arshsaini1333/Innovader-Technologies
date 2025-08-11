@@ -1,7 +1,3 @@
-.About {
-    /* margin-top: 5rem; */
-}
-
 .abt-container {
     display: flex;
     align-items: center;
@@ -254,4 +250,9 @@
 .odd {
     background-color: #333;
     color: white;
+}
+
+.abt-content span {
+    background-color: yellow;
+    font-weight: bold;
 }

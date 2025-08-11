@@ -25,7 +25,7 @@ function AboutTop() {
       </div>
       <div className="abt-content">At Innovader, we understand the real estate market inside out. Whether you’re a builder, broker, or developer – we know what your buyers are searching for and how to bring them to your doorstep. From high-performance ad campaigns to smart digital strategies, our focus is clear: results that grow your business.
 
-      Backed by deep industry insights and digital innovation, we’ve helped real estate brands stand out in a crowded market – and close deals faster than ever.
+      Backed by deep industry insights and digital innovation, we’ve helped real estate brands stand out in a crowded market – <span>and close deals faster than ever</span>.
       </div>
 
       <div className="abt-btn">
@@ -36,7 +36,7 @@ function AboutTop() {
         <div className="abt-card">
           <div className="abtc-logo"><HistoryIcon sx={{ fontSize: 50}}/></div>
           <div className="abtc-name">Our Story</div>
-          <div className="abtc-desc">We started Innovader Technology with a mission – to solve the biggest problem in real estate marketing: poor-quality leads. With deep knowledge of buyer psychology, digital trends, and real estate sales funnels, we help builders, brokers, and developers reach serious buyers online. What began as a small idea has now helped 50+ real estate brands grow.
+          <div className="abtc-desc">We started Innovader Technologies with a mission – to solve the biggest problem in real estate marketing: poor-quality leads. With deep knowledge of buyer psychology, digital trends, and real estate sales funnels, we help builders, brokers, and developers reach serious buyers online. What began as a small idea has now helped 50+ real estate brands grow.
 </div>
         </div>
         <div className="abt-card odd">

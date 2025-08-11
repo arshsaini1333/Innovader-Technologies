@@ -50,7 +50,7 @@ const services = [
         img: gads
     },
     {
-      name: " Facebook Ads (Meta Ads)",
+      name: " Meta Ads",
       content:
         "Reach the right buyers, right when they’re looking. Our laser-focused Facebook ad strategies bring in serious leads at lower costs. Whether you’re promoting a launch or running retargeting ads — we help you fill up your site visits calendar.",
         img: fb

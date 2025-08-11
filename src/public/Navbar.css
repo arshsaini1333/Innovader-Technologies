@@ -71,7 +71,7 @@ img {
     align-items: center;
     cursor: pointer;
     /* gap: 0.5rem; */
-    margin-right: 5rem !important;
+    /* margin-right: 5rem !important; */
 }
 
 .banner p {
@@ -92,6 +92,8 @@ img {
 
 .d-btn {
     color: #1b70ef !important;
+    margin-left: 1rem !important;
+    padding: 0 0.5rem;
 }
 
 .banner-d p {
@@ -113,7 +115,7 @@ img {
     border-radius: 2rem !important;
     transition: 0.5s ease-in-out;
     padding: 0.3rem 1.2rem !important;
-    margin-left: 5rem;
+    margin: 0 auto;
     border-right: #00c6fb;
     background-color: #1b70ef;
 }
@@ -194,17 +196,38 @@ img {
     padding: 8px !important;
 }
 
+.css-1uent87-MuiButtonBase-root-MuiButton-root {
+    color: #333 !important;
+    font-family: "Merriweather", serif !important;
+    /* border: 2px solid green !important; */
+    background-color: white !important;
+    font-size: 1rem !important;
+}
+
+.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
+    width: 100% !important;
+    /* margin-left: 1rem !important; */
+}
+
+.css-rizt0-MuiTypography-root {
+    font-family: "Merriweather", serif !important;
+}
+
 @media screen and (max-width:1100px) {
     .nav-link-container {
-        width: 100%;
-        gap: 0.5rem;
+        display: none !important;
+        /* hide navbar links */
     }
-    .letsTalk {
-        margin-left: 3rem;
+    .banner {
+        display: none !important;
+    }
+    .css-1ygil4i-MuiToolbar-root {
+        height: fit-content !important;
+        min-height: 0 !important;
     }
 }
 
-@media screen and (max-width:601px) {
+@media screen and (max-width:603px) {
     .banner {
         display: none !important;
     }
@@ -236,19 +259,12 @@ img {
     }
 }
 
-.css-1uent87-MuiButtonBase-root-MuiButton-root {
-    color: #333 !important;
-    font-family: "Merriweather", serif !important;
-    /* border: 2px solid green !important; */
-    background-color: white !important;
-    font-size: 1rem !important;
-}
-
-.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
-    width: 100% !important;
-    /* margin-left: 1rem !important; */
-}
-
-.css-rizt0-MuiTypography-root {
-    font-family: "Merriweather", serif !important;
+@media screen and (max-width:1100px) {
+    .nav-link-container {
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .letsTalk {
+        margin-left: 3rem;
+    }
 }

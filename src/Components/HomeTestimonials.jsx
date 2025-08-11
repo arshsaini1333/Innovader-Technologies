@@ -6,7 +6,7 @@ import EnquiryPopup from './EnquiryPopup';
 import CounterCircle from './CounterCircle';
 import CallIcon from '@mui/icons-material/Call';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-// const testimonials = [
+
 //   {
 //     name: "Rajat Arora",
 //     location: "New Delhi",

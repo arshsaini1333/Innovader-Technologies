@@ -1,0 +1,60 @@
+.WebsiteDesign {}
+
+.wt-topmost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url('../assets/webtop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.wt-topmost::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.692);
+    height: 100%;
+    width: 100%;
+}
+
+.wtt-content {
+    z-index: 10;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin-top: 5rem;
+}
+
+.wtt-header {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.wtt-sub-head {
+    font-size: 1.6rem;
+    font-weight: bold;
+    width: 80%;
+    margin: 0.5rem auto;
+}
+
+.wtt-cta {
+    padding: 1rem 1.5rem;
+    background-color: #1b70efbb;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.wtt-cta:hover {
+    background-color: #1b70ef;
+}

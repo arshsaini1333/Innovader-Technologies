@@ -111,17 +111,10 @@ const F1HorizontalScroll = () => {
 
   return (
     <div className="f1-container">
-      <div className="scroll-head">Website Designs</div>
-      <div className="sub-head">Showcase a selection of websites developed by <strong>Innovader Technologies</strong>, highlighting the diversity in design and functionality.</div>
+      <div className="scroll-head">A Glimpse into Our Web Design Creations</div>
+      <div className="sub-head">Discover how we turn concepts into high-performing, visually stunning websites.</div>
       <div ref={racesWrapperRef} className="racesWrapper">
         <div ref={racesRef} className="races">
-          {/* <h2>Monaco</h2>
-          <h2>Austria</h2>
-          <h2>Hungary</h2>
-          <h2>Netherlands</h2>
-          <h2>Japan</h2> */}
-          {/* New Addings*/}
-
                     <div className="projectBlock">
                         <VideoHover videoSrc={roofingV} poster={roofingP} cat="Real Estate" plat="React, Tailwind CSS"/>
                     </div>

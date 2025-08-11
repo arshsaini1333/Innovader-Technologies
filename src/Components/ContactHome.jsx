@@ -13,9 +13,9 @@ export default function ContactHome(){
        <div className="cl-contacts">
         <p><CallIcon/> +91 8447149389</p>
         <p><EmailIcon/> Hr@innovader.in</p>
-        <p><LocationOnIcon/> E-93/1, SOUTH, near SUMAN CHOWK <br />
+        {/* <p><LocationOnIcon/> E-93/1, SOUTH, near SUMAN CHOWK <br />
 Block D, Chhatarpur Extension<br /> Chhatarpur,
-New Delhi (110074)</p>
+New Delhi (110074)</p> */}
        </div>
       </div>
 
@@ -28,7 +28,7 @@ New Delhi (110074)</p>
         Get real leads, ready to talk and convert
         </p>
           <input type="text" placeholder="Full Name *" required />
-          <div className="form-row">
+          <div className="form-row unq-row">
             <input type="email" placeholder="Enter Your Email *" required />
             <input type="tel" placeholder="Enter phone number *" required />
           </div>

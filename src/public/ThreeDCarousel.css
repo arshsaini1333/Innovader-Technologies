@@ -68,6 +68,7 @@
     /* background-color: #555; */
     height: fit-content;
     top: 25%;
+    /* border: 2px solid red; */
 }
 
 .carousel-card.left {
@@ -329,54 +330,6 @@
 
 /* Responsive Design */
 
-@media (max-width: 768px) {
-    .carousel-container {
-        overflow: hidden;
-        padding: 1rem;
-    }
-    .card-inner {
-        overflow: hidden;
-        width: 280px;
-        height: 280px;
-    }
-    .card-content {
-        overflow: hidden;
-        padding: 1.5rem;
-    }
-    .card-emoji {
-        overflow: hidden;
-        font-size: 3rem;
-    }
-    .card-title {
-        overflow: hidden;
-        font-size: 1.25rem;
-    }
-    .card-description {
-        overflow: hidden;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-stage {
-        overflow: hidden;
-        height: 320px;
-    }
-    .card-inner {
-        overflow: hidden;
-        width: 240px;
-        height: 240px;
-    }
-    .carousel-card.left {
-        overflow: hidden;
-        left: 10%;
-    }
-    .carousel-card.right {
-        overflow: hidden;
-        left: 90%;
-    }
-}
-
 .why-next {
     display: flex;
     flex-direction: column;
@@ -491,3 +444,58 @@
     align-items: center;
     gap: 1rem;
 }
+
+@media screen and (max-width:850px) {
+    .WantToSee .service-headings {
+        padding: 0 1rem;
+    }
+    .WantToSee .sh-sub {
+        font-size: 1.5rem;
+    }
+    .WantToSee .sh-super {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .carousel-container {
+        overflow: hidden;
+        /* padding: 0.5rem; */
+        padding: 0;
+    }
+    .card-inner {
+        overflow: hidden;
+        /* width: 380px;
+        height: 280px; */
+        height: auto;
+    }
+    .card-emoji {
+        overflow: hidden;
+        font-size: 0rem;
+    }
+    .carousel-card {
+        /* border: 2px solid red; */
+        width: 85%;
+    }
+}
+
+
+/* @media (max-width: 480px) {
+    .carousel-stage {
+        overflow: hidden;
+        height: 320px;
+    }
+    .card-inner {
+        overflow: hidden;
+        width: 240px;
+        height: 240px;
+    }
+    .carousel-card.left {
+        overflow: hidden;
+        left: 10%;
+    }
+    .carousel-card.right {
+        overflow: hidden;
+        left: 90%;
+    }
+} */

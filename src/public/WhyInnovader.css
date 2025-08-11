@@ -41,6 +41,8 @@
     font-size: 2rem;
     font-weight: 700;
     color: #333;
+    text-align: center;
+    width: 90%;
 }
 
 .super-head span {
@@ -109,4 +111,34 @@
 .spans {
     display: flex;
     gap: 2rem;
+}
+
+@media screen and (max-width: 830px) {
+    .why-counters {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .counter {
+        width: 40%;
+        padding: 0;
+    }
+    .counter p {
+        text-wrap: wrap;
+    }
+    .why-cta {
+        width: 100%;
+        border-radius: 0;
+        flex-direction: column;
+    }
+    .why-cta .spans {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .counter {
+        width: 60%;
+    }
 }
