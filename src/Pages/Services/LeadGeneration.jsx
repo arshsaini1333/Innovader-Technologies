@@ -10,6 +10,8 @@ import MuseumIcon from '@mui/icons-material/Museum';
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
+
+import realE from '../../assets/realE.jpeg'
 export default function LeadGeneration() {
   return (
     <div className='LeadGen'>
