@@ -81,7 +81,7 @@
         flex-direction: row;
         width: 100%;
         height: fit-content;
-        padding: 3rem;
+        padding: 1rem;
         gap: 1rem;
     }
     .col1 {
@@ -89,16 +89,28 @@
     }
     .col2 {
         padding: 1rem 3rem;
+        padding-top: 0;
     }
     .results {
         flex-direction: column;
     }
     .col2 {
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         margin: auto 0;
+    }
+    .wn-btn {
+        margin-top: 1rem;
     }
     .col2 p {
         font-size: 2rem;
+    }
+    .col1 .wn-card {
+        transform: rotate(0deg);
+        animation: none;
+    }
+    .col3 .wn-card {
+        transform: rotate(0deg);
+        animation: none;
     }
 }

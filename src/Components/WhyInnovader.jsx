@@ -41,8 +41,8 @@ export default function WhyInnovader() {
     </div>
     <div className="why-cta"> 
        <div className='spans'>
-    <span>Real Estate Leads</span> <span>Verified Buyers</span> <span>Lower CPR</span> 
-       </div>
+     <span>Verified Buyers</span> <span>Lower CPR</span> 
+       </div><span>Real Estate Leads</span>
    <button className='why-btn'>Scale With Us Today</button>
 
    </div> 

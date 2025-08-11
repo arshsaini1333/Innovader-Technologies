@@ -182,7 +182,7 @@
         top: 0rem;
         right: 0rem;
         background-color: rgba(235, 232, 232, 0.735);
-        padding: 1rem !important;
+        padding: 0rem !important;
     }
     .scroll-inner img {
         /* height: 10rem; */
@@ -197,6 +197,15 @@
         align-items: center;
         padding: 0.5rem !important;
         width: auto !important;
+    }
+    .HomeRight :nth-child(3) {
+        display: none;
+    }
+    .scroll-row {
+        width: 50%;
+    }
+    .scroll-inner img {
+        height: 11rem;
     }
 }
 
