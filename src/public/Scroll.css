@@ -140,6 +140,7 @@
     gap: 1rem;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.144);
     /* display: none; */
+    border: 2px solid red;
 }
 
 .innerBlock:hover {
@@ -206,23 +207,18 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
-    .containerProject {
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media screen and (max-width:1000px) {
     .innerBlock {
-        width: 80%;
+        width: 50%;
     }
-}
-
-@media only screen and (max-width: 550px) {
-    .innerBlock {
-        width: 98%;
+    .project-image,
+    .project-video {
+        height: 72vh;
     }
-    .project-image {
-        height: 10rem;
+    .scroll-head {
+        font-size: 1.5rem;
     }
-    #Projects {
-        padding: 4rem 1rem;
+    .races .projectBlock {
+        width: 900px;
     }
 }

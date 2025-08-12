@@ -12,14 +12,14 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 
 import realE from '../../assets/realE.jpeg'
-export default function LeadGeneration() {
+export default function LeadGeneration({popUp}) {
   return (
     <div className='LeadGen'>
       <div className="lead-gen-top">
         <div className="lg-head-content">
         <div className="lg-header">Real Estate Lead Generation Agency That Delivers Verified Buyer Leads</div>
         <div className="lg-sub-header">Get high-intent, pre-qualified buyer inquiries—delivered straight to your inbox or CRM every single day.</div>
-        <button className='lead-gen-cta'>Book A Free Consultation Today</button>
+        <button onClick={()=>popUp()} className='lead-gen-cta'>Book A Free Consultation Today</button>
         </div>
       </div>
 
@@ -33,7 +33,7 @@ export default function LeadGeneration() {
             At <strong>Innovader Technologies</strong>, we specialize in real estate lead generation-helping developers, brokers, and property consultants attract motivated buyers with data-focused campaigns and conversion‑optimized funnels. <br /> <br />
           From video lead ads and Click-to-WhatsApp campaigns to tailored landing pages and retargeting sequences, we build a buyer journey that goes from awareness to action-ensuring you get qualified, site-visiting prospects-not just clicks or traffic.
             </p>
-            <button className='lgwc-cta'><WifiCallingIcon/><span>Get Your Lead Generation Proposal</span></button>
+            <button onClick={()=>popUp()} className='lgwc-cta'><WifiCallingIcon/><span>Get Your Lead Generation Proposal</span></button>
           </div>
           <div className="lgwc-image">
             <img src={realE} alt="" />
@@ -69,7 +69,7 @@ export default function LeadGeneration() {
           </div>
         </div>
         <div className="lgn-cta">
-        <button className='lgwc-cta'><WifiCallingIcon/><span>Get Your Lead Generation Proposal</span></button>
+        <button onClick={()=>popUp()} className='lgwc-cta'><WifiCallingIcon/><span>Get Your Lead Generation Proposal</span></button>
         </div>
       </div>
 

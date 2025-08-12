@@ -105,3 +105,95 @@
         transform: scale(1.1);
     }
 }
+
+.ReelInsta {
+    width: 100%;
+    margin: 3rem 0;
+    height: fit-content;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 30%;
+    height: 30rem;
+    /* height: fit-content; */
+    padding: 1rem 0;
+    /* border: 2px solid red; */
+    /* box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.13); */
+}
+
+.video-element {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.play-icon-overlay,
+.pause-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    /* Let clicks pass through to video */
+    opacity: 0.8;
+}
+
+.reels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    padding: 1rem 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .ig-cards {
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        column-gap: 2rem;
+    }
+    .video-container {
+        width: 30%;
+    }
+    .ig-heading {
+        font-size: 2rem;
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .wtc-heading {
+        font-size: 3rem;
+    }
+    .wtc-subhead {
+        font-size: 1.5rem;
+    }
+    .video-container {
+        width: 40%;
+    }
+    .ig-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .wtc-cta {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ig-heading {
+        font-size: 1.5rem;
+    }
+    .video-container {
+        width: 90%;
+        padding: 0;
+    }
+    .ig-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

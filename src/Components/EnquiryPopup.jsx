@@ -1,10 +1,10 @@
 import React, { use, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import "../public/EnquiryPopup.css";
-import img from "../assets/wt1.png";
+import img from "../assets/realE.jpeg";
 
 const EnquiryPopup = ({ isOpen, onClose }) => {
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzt9UpvROsjUYlILwpWgzGdW-lQJl9kxxMoinVgj9DTgVLLPyVn2A_icK8AaYNGW_ka/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby1xh4MAihX9iGdnxXKewSv4Sb770HwSTNwPO7htKyQDkE88JZuNSBykFEvwkJcHX6_/exec';
 
   const [formData, setFormData] = useState({
     name: '',
@@ -43,6 +43,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
         setMessage("Form submitted successfully!");
         setSubmitting(false);
         setFormData({ name: '', email: '', phone: '', message: '' });
+        onClose();
         navigate('/thankyou')
       })
       .catch(() => {
@@ -58,7 +59,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
           <img src={img} alt="Beautiful Flats" />
         </div>
         <div className="popup-right">
-          <h2>Book Your Dream Home Today</h2>
+          <h2>Schedule Your Call Today</h2>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
               type="text"

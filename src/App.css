@@ -4,3 +4,7 @@
     font-family: "Merriweather", serif;
     overflow-x: hidden;
 }
+
+button {
+    cursor: pointer;
+}

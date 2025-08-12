@@ -256,3 +256,55 @@
     background-color: yellow;
     font-weight: bold;
 }
+
+@media screen and (max-width: 900px) {
+    .head-super {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .head-sub {
+        font-size: 1.1rem;
+    }
+    .abt-cards {
+        flex-direction: column;
+    }
+    .team-head {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    .founder {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .f-image img {
+        height: 15rem;
+        width: 15rem;
+    }
+    .f-content {
+        width: 100%;
+    }
+    .founders {
+        justify-content: center;
+        align-items: center;
+    }
+    .f-content .name {
+        font-size: 1.4rem;
+    }
+    .co .f-content {
+        flex-direction: column;
+        text-align: left;
+    }
+    .co .f-links {
+        justify-content: flex-start;
+    }
+    .abt-subhead {
+        font-size: 1.3rem;
+    }
+    .abt-content {
+        font-size: 0.9rem;
+    }
+    .abt-btn button {
+        font-size: 1rem;
+    }
+}

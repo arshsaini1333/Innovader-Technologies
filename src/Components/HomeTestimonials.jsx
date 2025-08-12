@@ -130,7 +130,7 @@ const TestimonialCard = ({ name, title, description }) => (
   </div>
 );
 
-const HomeTestimonials = () => {
+const HomeTestimonials = ({popUp}) => {
   const columns = splitColumns(testimonials, 2);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
@@ -148,7 +148,7 @@ const HomeTestimonials = () => {
       </div>
  <p><FormatQuoteIcon className='fq-start fq'/>Our clients’ success stories reflect our commitment to excellence. See how we’ve helped them find their dream homes, sustainable investments, and perfect getaways.<FormatQuoteIcon className='fq'/></p>
       <div className="ht-cta">
-        <button ><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
+        <button onClick={()=>popUp()} ><CallIcon className='callIcon' sx={{ fontSize: 25 }}/> <span>Enquire Now</span></button>
       </div>
       </div>
       <div className="columns">

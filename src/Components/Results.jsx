@@ -6,7 +6,7 @@ import ShowChartIcon from '@mui/icons-material/ShowChart';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
 import FitScreenIcon from '@mui/icons-material/FitScreen';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-const Results = () => {
+const Results = ({popUp}) => {
   return (
     <div className='results'>
       <div className="colum col1">
@@ -26,7 +26,7 @@ const Results = () => {
       <div className="colum col2">
       <div className="wn-btn wn-col">
               <p>Want Results Like These?</p>
-              <button><span>Lets Talk</span><CallIcon/></button>
+              <button onClick={()=>popUp()}><span>Lets Talk</span><CallIcon/></button>
             </div>
       </div>
       <div className="colum col3">

@@ -1,0 +1,67 @@
+.Thanyou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('../assets/thankyoubg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Thanyou::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.742);
+}
+
+.thankyou-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    margin-top: 5rem;
+    width: 80%;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.thank-head {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.thank-subhead {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.thank-cta {
+    text-align: center;
+    width: fit-content;
+    background-color: #1b70ef;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    color: white;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .thank-head {
+        font-size: 2rem;
+    }
+    .thank-subhead {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}

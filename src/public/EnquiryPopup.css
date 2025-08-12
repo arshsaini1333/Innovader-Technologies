@@ -29,6 +29,7 @@
 .popup-left {
     flex: 1;
     min-height: 400px;
+    overflow: hidden;
 }
 
 .popup-left img {
@@ -66,7 +67,7 @@
 
 .popup-right button[type="submit"] {
     padding: 12px;
-    background-color: #a27e27;
+    background-color: #1b70ef;
     font-size: 1.1rem;
     font-weight: bold;
     color: #fff;

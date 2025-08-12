@@ -99,6 +99,11 @@
     }
 }
 
+.s-cta a {
+    text-decoration: none !important;
+    color: #1b70ef;
+}
+
 @media screen and (max-width:850px) {
     .service-head .heading {
         font-size: 1.5rem;

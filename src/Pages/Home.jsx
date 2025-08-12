@@ -1,7 +1,7 @@
 import HomeLeft from '../Components/HomeLeft.jsx'
 import HomeRight from '../Components/HomeRight.jsx'
 import '../public/Home.css'
-import EnquireNow from '../Components/EnquireNowForm.jsx'
+
 import OurClients from '../Components/OurClients.jsx'
 import WantToSee from '../Components/WantToSee.jsx'
 // import Testimonial from '../Components/Testimonial.jsx'
@@ -9,7 +9,7 @@ import HomeTestimonials from '../Components/HomeTestimonials.jsx'
 import WhyInnovader from '../Components/WhyInnovader.jsx'
 import Results from '../Components/Results.jsx'
 import Footer from '../Components/Footer.jsx'
-
+import EnquiryPopup from '../Components/EnquiryPopup.jsx'
 import OurServices from '../Components/OurServices.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
@@ -19,16 +19,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
  
-export default function Home()
+export default function Home({popUp})
 {
     useEffect(() => {
         AOS.init({ duration: 1000 });
       }, []);
-    const [isShow, setShow] = useState(false);
-    function popUp()
-    {
-        setShow(!isShow);
-    }
+    
     
     return (
         <>
@@ -38,15 +34,16 @@ export default function Home()
         </div>
         <div className="Parallax">
         <OurClients/>
-        <WhyInnovader/>
+        <WhyInnovader popUp={popUp}/>
         <OurServices/>
         <WantToSee/>     
-        <Results/> 
-        <HomeTestimonials/>
+        <Results popUp={popUp}/> 
+        <HomeTestimonials popUp={popUp}/>
         <ContactHome/>
         {/* <Footer/> */}
         </div>
-        <EnquireNow isShow={isShow} popUp={popUp}/>
+        
+       
         </>
     )
 }

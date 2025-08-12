@@ -8,14 +8,14 @@ import bst5 from '../../assets/bst5.png'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import PinchIcon from '@mui/icons-material/Pinch';
 import JoinLeftIcon from '@mui/icons-material/JoinLeft';
-export default function BrandStratergy() {
+export default function BrandStratergy({popUp}) {
   return (
     <div className='Brand'>
       <div className="brand-top">
        <div className="brand-top-header">
        <div className="brand-top-head"> Brand Strategy That Sells Without Saying a Word</div>
         <div className="brand-top-sub">In a world full of listings, only a few feel like “the one” — that’s the power of branding.</div>
-        <button className='brand-cta'>Book A Free Consultation</button>
+        <button onClick={()=>popUp()} className='brand-cta'>Book A Free Consultation</button>
        </div>
       </div>
 

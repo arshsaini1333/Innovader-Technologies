@@ -3,7 +3,7 @@ import ScrollCounter from './ScrollCounter'
 import '../public/WhyInnovader.css'
 import logo from '../assets/logo.png'
 
-export default function WhyInnovader() {
+export default function WhyInnovader({popUp}) {
 
   return (
     <div className='WhyInnovader'>
@@ -43,7 +43,7 @@ export default function WhyInnovader() {
        <div className='spans'>
      <span>Verified Buyers</span> <span>Lower CPR</span> 
        </div><span>Real Estate Leads</span>
-   <button className='why-btn'>Scale With Us Today</button>
+   <button onClick={()=>popUp()} className='why-btn'>Scale With Us Today</button>
 
    </div> 
     </div>

@@ -3,7 +3,7 @@ import HistoryIcon from '@mui/icons-material/History';
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import CallMadeIcon from '@mui/icons-material/CallMade';
-function AboutTop() {
+function AboutTop({popUp}) {
   return (
     <div className='abt-container'>
       <div className="abt-head">
@@ -29,7 +29,7 @@ function AboutTop() {
       </div>
 
       <div className="abt-btn">
-        <button><CallMadeIcon sx={{ fontSize: 30}}/>Unlock Your Digital Edge </button>
+        <button onClick={()=>popUp()}><CallMadeIcon sx={{ fontSize: 30}}/>Unlock Your Digital Edge </button>
       </div>
 
       <div className="abt-cards">
