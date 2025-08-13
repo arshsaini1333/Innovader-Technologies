@@ -130,6 +130,9 @@
     width: 55%;
     padding: 0.5rem;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bstc-image img {
@@ -258,6 +261,9 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .bst-sub {
         font-size: 1rem;

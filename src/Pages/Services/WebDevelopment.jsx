@@ -7,6 +7,8 @@ import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 import ScoreIcon from '@mui/icons-material/Score';
 import EmergencyIcon from '@mui/icons-material/Emergency';
 import websol from '../../assets/websol4.png'
+import ServiceForm from '../../Components/ServiceForm'
+
 export default function WebDevelopment({popUp}) {
   return (
     <div className='WebsiteDesign'>
@@ -88,7 +90,7 @@ export default function WebDevelopment({popUp}) {
             <img src={websol} alt="" />
           </div>
         </div>
-
+<ServiceForm/>
     </div>
   )
 }

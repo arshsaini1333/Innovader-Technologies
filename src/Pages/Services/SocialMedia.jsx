@@ -6,6 +6,8 @@ import ShareIcon from '@mui/icons-material/Share';
 import OfflinePinIcon from '@mui/icons-material/OfflinePin';
 import ScaleIcon from '@mui/icons-material/Scale';
 import IosShareIcon from '@mui/icons-material/IosShare';
+import ServiceForm from '../../Components/ServiceForm'
+
 export default function SocialMedia({popUp}) {
   return (
     <div className='social-media'>
@@ -86,6 +88,7 @@ export default function SocialMedia({popUp}) {
          </div>
 
          {/* Last Div */}
+         <ServiceForm/>
     </div>
   )
 }

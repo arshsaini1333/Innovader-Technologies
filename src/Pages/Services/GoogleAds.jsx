@@ -10,7 +10,8 @@ import SaveAsIcon from '@mui/icons-material/SaveAs';
 import ThumbsUpDownIcon from '@mui/icons-material/ThumbsUpDown';
 import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import ArtTrackIcon from '@mui/icons-material/ArtTrack';
-
+import ServiceForm from '../../Components/ServiceForm'
+ 
 import googlead from '../../assets/googlead2.png'
 import realE from '../../assets/googleads.png'
 export default function GoogleAds({popUp}) {
@@ -88,27 +89,32 @@ export default function GoogleAds({popUp}) {
         <div className="lgs-header">Our 5-Step Google Ads Process</div>
         <div className="lgs-cards">
           <div className="lgs-card">
+          <span className='badge'>1</span>
             <div className="lgsc-icon"><SaveAsIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Plan Your Campaign</div>
             <div className="lgsc-desc">We understand your goals and create a custom Google Ads strategy.
 </div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>2</span>
             <div className="lgsc-icon"><ThumbsUpDownIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Pick the Best Keywords</div>
             <div className="lgsc-desc">We find search terms your ideal customers use.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>3</span>
             <div className="lgsc-icon"><AdsClickIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Create Ads That Click</div>
             <div className="lgsc-desc">We design and write ads that grab attention and drive action.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>4</span>
             <div className="lgsc-icon"><TrackChangesIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Target & Optimize</div>
             <div className="lgsc-desc">We show your ads to the right audience and keep improving them for better results.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>5</span>
             <div className="lgsc-icon"><ArtTrackIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Track & Report</div>
             <div className="lgsc-desc">You get easy-to-read reports showing exactly what your ads achieved.</div>
@@ -137,7 +143,7 @@ export default function GoogleAds({popUp}) {
           </div>
         </div>
 
-
+ <ServiceForm/>
     </div>
   )
 }

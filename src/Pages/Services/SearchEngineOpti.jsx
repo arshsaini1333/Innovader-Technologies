@@ -10,6 +10,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import LinkIcon from "@mui/icons-material/Link";
 import PlaceIcon from "@mui/icons-material/Place";
 import InsightsIcon from "@mui/icons-material/Insights";
+import ServiceForm from '../../Components/ServiceForm'
 
 export default function SearchEngineOpti({popUp}) {
 
@@ -114,7 +115,7 @@ export default function SearchEngineOpti({popUp}) {
 
       </div>
     </div>
-      
+      <ServiceForm/>
     </div>
   )
 }

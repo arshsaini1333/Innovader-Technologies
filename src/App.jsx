@@ -15,6 +15,7 @@ import GoogleAds from './Pages/Services/GoogleAds';
 import SocialMedia from './Pages/Services/SocialMedia';
 import EnquiryPopup from './Components/EnquiryPopup';
 import Thankyou from './Pages/Thankyou'
+import ScrollToTop from './Components/ScrollToTop';
 function App() { 
   const [isShow, setShow] = useState(false);
   function popUp()
@@ -42,6 +43,7 @@ function App() {
           <Route path="thankyou" element={<Thankyou />} />
         </Routes>
         <EnquiryPopup isOpen={isShow} onClose={popUp} />
+        <ScrollToTop/>
       {/* </BrowserRouter> */}
     </>
   )

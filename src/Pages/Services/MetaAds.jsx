@@ -7,6 +7,8 @@ import ShareIcon from '@mui/icons-material/Share';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import RealEstateAgentIcon from '@mui/icons-material/RealEstateAgent';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import ServiceForm from '../../Components/ServiceForm'
+
 export default function MetaAds({popUp}) {
   return (
     <div className='MetaAds'>
@@ -92,6 +94,7 @@ export default function MetaAds({popUp}) {
            </div>
          </div>
            
+           <ServiceForm/>
       
     </div>
   )

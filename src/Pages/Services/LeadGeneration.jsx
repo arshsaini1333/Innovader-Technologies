@@ -10,6 +10,7 @@ import MuseumIcon from '@mui/icons-material/Museum';
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
+import ServiceForm from '../../Components/ServiceForm'
 
 import realE from '../../assets/realE.jpeg'
 export default function LeadGeneration({popUp}) {
@@ -79,33 +80,42 @@ export default function LeadGeneration({popUp}) {
         <div className="lgs-header">From Planning to Performance – Here's How We Do It</div>
         <div className="lgs-cards">
           <div className="lgs-card">
+            <span className='badge'>1</span>
             <div className="lgsc-icon"><FilterAltIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Strategy & Funnel Design <span>5 Days</span></div>
             <div className="lgsc-desc">Keyword research, custom microsite/landing page setup optimized for conversions.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>2</span>
+
             <div className="lgsc-icon"><RocketLaunchIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Campaign Launch <span>1 Day</span></div>
             <div className="lgsc-desc">Instagram + Meta Ads, Google search ads, and other targeted paid efforts to start bringing traffic.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>3</span>
+
             <div className="lgsc-icon"><LocalLibraryIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Learning Phase <span>5–7 Days</span></div>
             <div className="lgsc-desc">Optimize campaigns, A/B test creatives, adjust budgets for best performance.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>4</span>
+
             <div className="lgsc-icon"><AccessAlarmsIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Real-Time Analysis & Scaling</div>
             <div className="lgsc-desc">Track CPL, CTR, engagement; refine campaigns while retargeting high-interest users.</div>
           </div>
           <div className="lgs-card">
+          <span className='badge'>5</span>
+
             <div className="lgsc-icon"><AssuredWorkloadIcon sx={{ fontSize: 40 }}/></div>
             <div className="lgsc-name">Retargeting & Follow-Up <span>Ongoing</span></div>
             <div className="lgsc-desc">WhatsApp automation, email drip sequences, lead nurturing to move leads toward site visits and conversions.</div>
           </div>
         </div>
       </div>
-
+<ServiceForm/>
 
     </div>
   )
