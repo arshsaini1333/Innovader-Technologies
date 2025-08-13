@@ -33,12 +33,12 @@ function App() {
           <Route path="/our-work" element={<OurWork popUp={popUp}/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/lead-generation" element={<LeadGeneration popUp={popUp}/>} />
-          <Route path="/services/web-development" element={<WebDevelopment />} />
+          <Route path="/services/web-development" element={<WebDevelopment popUp={popUp}/>}  />
           <Route path="/services/brand-stratergy" element={<BrandStratergy popUp={popUp}/>} />
-          <Route path='/services/social-media-markte' element={<SocialMedia />} />
-          <Route path='/services/meta-ads' element={<MetaAds />} />
-          <Route path='/services/google-ads' element={<GoogleAds />} />
-          <Route path="/services/seo" element={<SearchEngineOpti />} />
+          <Route path='/services/social-media-markte' element={<SocialMedia popUp={popUp}/>} />
+          <Route path='/services/meta-ads' element={<MetaAds popUp={popUp}/>} />
+          <Route path='/services/google-ads' element={<GoogleAds popUp={popUp}/>} />
+          <Route path="/services/seo" element={<SearchEngineOpti popUp={popUp}/>} />
           <Route path="thankyou" element={<Thankyou />} />
         </Routes>
         <EnquiryPopup isOpen={isShow} onClose={popUp} />

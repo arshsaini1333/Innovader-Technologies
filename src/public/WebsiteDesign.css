@@ -1,4 +1,6 @@
-.WebsiteDesign {}
+.WebsiteDesign {
+    color: #333 !important;
+}
 
 .wt-topmost {
     display: flex;
@@ -6,7 +8,7 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    background-image: url('../assets/webtop.jpg');
+    background-image: url('../assets/website.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -17,7 +19,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: rgba(0, 0, 0, 0.491);
     height: 100%;
     width: 100%;
 }
@@ -57,4 +59,227 @@
 
 .wtt-cta:hover {
     background-color: #1b70ef;
+}
+
+.web-service {
+    z-index: 100;
+    color: black !important;
+    width: 100%;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.webs-left {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    width: 30%;
+    gap: 3rem;
+}
+
+.webs-btn {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #1b70ef;
+    border-radius: 1rem;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border: none;
+}
+
+.webs-image {
+    width: 25%;
+    /* border: 2px solid red; */
+    padding: 1rem;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.235);
+}
+
+.webs-image img {
+    /* height: 10rem; */
+    width: 100%;
+}
+
+.webs-content span {
+    color: #333;
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.web-sol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+    background-color: rgb(234, 243, 249);
+}
+
+.websol-header {
+    color: #1b70ef;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.websol-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    margin: 2rem auto;
+}
+
+.wsc-card {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #1b70ef;
+    width: 23%;
+    text-align: center;
+    padding: 1rem;
+    min-height: 15rem;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.wsc-card:hover {
+    box-shadow: 0 0 2px 3px #1b70efad;
+}
+
+.wscc-name {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.wscc-desc {
+    font-size: 0.9rem;
+}
+
+.wscc-icon {
+    color: #1b70ef !important;
+}
+
+.wscc-btn {
+    width: fit-content;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #1b70ef;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    color: white;
+}
+
+.why-we-better {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    /* gap: 5rem; */
+    margin: 3rem auto;
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+
+.wwb-left {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+    /* margin-top: 1rem; */
+}
+
+.wwb-header {
+    font-size: 2rem;
+    color: #1b70ef;
+    font-weight: bold;
+}
+
+.wwb-image {
+    width: 45%;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.21);
+}
+
+.wwb-image img {
+    width: 100%;
+}
+
+.wwbl-list ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:900px) {
+    .wtt-header {
+        font-size: 2rem;
+    }
+    .wtt-sub-head {
+        font-size: 1.1rem;
+    }
+    .web-service {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align-last: center;
+        gap: 1rem;
+    }
+    .webs-left {
+        width: 100%;
+        gap: 1.5rem;
+    }
+    .webs-image {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .webs-btn {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .websol-cards {
+        flex-direction: column;
+    }
+    .wsc-card {
+        width: 100%;
+        min-height: 10rem;
+    }
+    .websol-header {
+        font-size: 2rem;
+    }
+    .why-we-better {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .wwb-image {
+        width: 100%;
+    }
+    .wwb-left {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .wwb-header {
+        font-size: 1.5rem;
+    }
+    .wwb-left ul {
+        font-size: 1rem;
+    }
 }

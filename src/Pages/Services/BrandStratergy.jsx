@@ -8,6 +8,8 @@ import bst5 from '../../assets/bst5.png'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import PinchIcon from '@mui/icons-material/Pinch';
 import JoinLeftIcon from '@mui/icons-material/JoinLeft';
+
+import ServiceForm from '../../Components/ServiceForm'
 export default function BrandStratergy({popUp}) {
   return (
     <div className='Brand'>
@@ -116,6 +118,8 @@ export default function BrandStratergy({popUp}) {
         <div className="bstt-footer">At Innovader, we don’t chase trends. We create real estate brands that feel like the future.</div>
       </div>
 
+
+       <ServiceForm/>
     </div>
   )
 }
