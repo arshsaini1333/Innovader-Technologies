@@ -116,6 +116,7 @@
     color: #007bff;
     font-weight: bolder;
     font-style: italic;
+    margin-top: -3rem;
 }
 
 .bstc-name {
@@ -202,4 +203,51 @@
     margin: 0 auto;
     font-weight: 600;
     text-align: center;
+}
+
+@media screen and (max-width:950px) {
+    .bstc-no {
+        font-size: 5rem;
+        margin: 0;
+    }
+    .bstc-name {
+        margin-top: 0;
+        font-size: 1.2rem;
+    }
+    .bstc-desc {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bst-cards {
+        gap: 0.5rem;
+    }
+    .bst-card {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 3rem;
+        padding: 0.5em;
+    }
+    .bstc-contetn {
+        width: 100%;
+    }
+    .bst-cards> :nth-child(even) {
+        flex-direction: column;
+        align-self: flex-end;
+        align-items: flex-end;
+        text-align: right;
+        margin: 0 auto;
+    }
+    .bstt-cards {
+        flex-direction: column;
+    }
+    .bstt-header {
+        font-size: 1.6rem;
+    }
+    .bstt-footer {
+        font-size: 1.2rem;
+        width: 90%;
+    }
 }
