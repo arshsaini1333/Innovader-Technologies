@@ -71,7 +71,7 @@ export default function Navbar(props) {
           item === 'Our Services' ? (
             <React.Fragment key={item}>
               <ListItemButton onClick={handleServicesClick}>
-                <ListItemText primary={item} />
+                <ListItemText primary={item} className='nav-links' style={{opacity: 1, color: '#333'}}/>
                 {servicesOpen ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
               <Collapse in={servicesOpen} timeout="auto" unmountOnExit>
