@@ -10,7 +10,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-
+import HomeIcon from '@mui/icons-material/Home';
 import logo from '../assets/logo.png';
 import '../public/Navbar.css';
 
@@ -102,7 +102,8 @@ export default function Navbar(props) {
             </ListItem>
           )
         ))}
-        <NavLink to='/contact' className='letsTalk' onClick={handleDrawerToggle}>Free Consultation</NavLink>
+        <NavLink to='/contact' className='letsTalk' onClick={handleDrawerToggle} ><HomeIcon/><span>Bring Me Qualified Buyers
+</span></NavLink>
       </List>
     </Box>
   );
@@ -172,7 +173,8 @@ export default function Navbar(props) {
                 </NavLink>
               )
             ))}
-            <NavLink to='/contact' className='letsTalk'>Free Consultation</NavLink>
+            <NavLink to='/contact' className='letsTalk'><HomeIcon/><span>Bring Me Qualified Buyers
+</span></NavLink>
           </Box>
         </Toolbar>
       </AppBar>

@@ -93,7 +93,7 @@ export default function ReelInsta() {
       ))}
      </div>
      <div className="reel-cta">
-     <button onClick={()=>popUp()} className="work-btn"> Want To know More</button>
+     <button onClick={()=>popUp()} className="work-btn"> Want to see more of our work?</button>
      </div>
     </div>
   );
