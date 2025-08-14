@@ -339,6 +339,9 @@
         font-size: 1.4rem;
         padding: 1rem;
     }
+    .lead-gen-top .lg-header {
+        font-size: 1.4rem;
+    }
     .lg-sub-header {
         font-size: 1rem;
         font-weight: 500;
