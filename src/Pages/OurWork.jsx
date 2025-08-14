@@ -12,6 +12,7 @@ export default function OurWork({popUp})
       <ReelInsta/>
       {/* <F1HorizontalScroll /> */}
       <ImageScrollCard/>
+      
       <InstaPhotos/>    
     </div>
     )

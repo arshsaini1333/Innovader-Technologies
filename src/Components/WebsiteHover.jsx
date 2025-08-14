@@ -40,6 +40,9 @@ export default function ImageScrollCard() {
       />
     </div>
      </div>
+     <div className="reel-cta">
+     <button onClick={()=>popUp()} className="work-btn"> Want To know More</button>
+     </div>
     </div>
   );
 }

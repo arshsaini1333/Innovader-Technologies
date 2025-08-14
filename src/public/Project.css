@@ -160,6 +160,23 @@
     margin: 0 auto;
 }
 
+.reel-cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-btn {
+    color: white;
+    background-color: #1b70ef;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .reel-sub {
     width: 90%;
     margin: 0 auto;
