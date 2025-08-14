@@ -1,6 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
+import { useEffect } from 'react';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import OurWork from './Pages/OurWork';
@@ -22,6 +23,18 @@ function App() {
   {
       setShow(!isShow);
   }
+
+
+  // Auto open after 2 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
 
   return (
     <>

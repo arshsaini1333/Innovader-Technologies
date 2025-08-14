@@ -269,11 +269,12 @@
         font-size: 1rem;
     }
     .brand-top-head {
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 90%;
     }
     .brand-top-sub {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
         width: 90%;
     }
 }

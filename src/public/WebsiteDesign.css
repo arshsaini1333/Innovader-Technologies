@@ -230,10 +230,11 @@
 
 @media screen and (max-width:900px) {
     .wtt-header {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     .wtt-sub-head {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
     .web-service {
         flex-direction: column;

@@ -31,6 +31,9 @@
     align-items: center;
     z-index: 100;
     color: white;
+    position: relative;
+    top: 10%;
+    /* margin: 10rem auto; */
 }
 
 .ssm-header {
@@ -165,7 +168,8 @@
 
 .ssm-wi {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 5rem;
     width: 100%;
     margin: 3rem auto;
     /* align-items: center; */
@@ -177,7 +181,7 @@
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    width: 30%;
+    width: 35%;
 }
 
 .sswi-image {
@@ -286,11 +290,12 @@
 
 @media screen and (max-width: 800px) {
     .ssm-header {
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 90%;
     }
     .ssm-sub-header {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
         width: 90%;
         margin-top: 1rem;
     }

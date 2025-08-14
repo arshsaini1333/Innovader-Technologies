@@ -47,6 +47,7 @@
     font-size: 1.6rem;
     font-weight: bold;
     text-align: center;
+    display: none;
 }
 
 .lead-gen-cta {
@@ -203,9 +204,10 @@
     text-align: center;
     color: white;
     gap: 1.5rem;
-    width: 100%;
-    height: 18rem;
+    /* width: 100%; */
+    min-height: 18rem;
     padding-top: 1.5rem;
+    justify-content: flex-start;
 }
 
 .lgnc-name {
@@ -231,6 +233,9 @@
     font-size: 3rem;
     font-weight: bold;
     color: #007bff;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .lgs-cards {
@@ -317,16 +322,21 @@
     width: 30%;
 }
 
+.GoogleADS .lg-sub-header {
+    display: flex;
+}
+
 
 /* Responsiveness */
 
 @media screen and (max-width:800px) {
     .lg-header {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding: 1rem;
     }
     .lg-sub-header {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
     .lead-gen-cta {
         font-size: 1rem;
@@ -365,6 +375,7 @@
     }
     .lgn-card {
         min-height: 15rem;
+        width: 100%;
     }
     .lg-no .lgwc-cta {
         margin-top: 0;

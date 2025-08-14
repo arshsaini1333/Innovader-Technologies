@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../public/WebsiteDesign.css'
 import card from '../../assets/webcard2.png'
+import Lottie from "lottie-react";
+import animation from '../../assets/ani.json'
 import DashboardCustomizeIcon from '@mui/icons-material/DashboardCustomize';
 import WebIcon from '@mui/icons-material/Web';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
@@ -30,7 +32,8 @@ export default function WebDevelopment({popUp}) {
         </div>
 
         <div className="webs-image">
-          <img src={card} alt="" />
+          {/* <img src={card} alt="" /> */}
+          <Lottie animationData={animation} loop={true} />
         </div>
        </div>
 

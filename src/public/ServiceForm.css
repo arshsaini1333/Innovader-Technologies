@@ -71,7 +71,7 @@ textarea {
     resize: none;
 }
 
-button {
+.service-form-container button {
     background: #1b70ef;
     width: fit-content;
     margin: 1rem auto;
@@ -83,10 +83,6 @@ button {
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s ease;
-}
-
-button:hover {
-    background: #333;
 }
 
 

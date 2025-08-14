@@ -230,10 +230,11 @@
 .abt-cards .abt-card {
     /* border: 2px solid red; */
     width: 100%;
-    min-height: 20rem;
+    min-height: 18rem;
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 1rem;
 }
 

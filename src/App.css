@@ -7,4 +7,10 @@
 
 button {
     cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.3 ease-in;
+}
+
+button:hover {
+    opacity: 1;
 }

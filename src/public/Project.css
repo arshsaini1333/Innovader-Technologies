@@ -151,6 +151,25 @@
     padding: 1rem 0;
 }
 
+.reel-head {
+    width: 90%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1b70ef;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.reel-sub {
+    width: 90%;
+    margin: 0 auto;
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1100px) {
     .ig-cards {
         grid-template-columns: repeat(3, 1fr);
@@ -182,6 +201,12 @@
     }
     .wtc-cta {
         margin-top: 2rem;
+    }
+    .reel-head {
+        font-size: 1.6rem;
+    }
+    .reel-sub {
+        font-size: 1.1rem;
     }
 }
 

@@ -17,9 +17,11 @@ import ig15 from '../assets/Insta Work/ig14.png'
 import ig16 from '../assets/Insta Work/ig15.png'
 import ig17 from '../assets/Insta Work/ig16.png'
 import ig18 from '../assets/Insta Work/ig13.png'
+import ig19 from '../assets/Insta Work/ig18.jpg'
+import ig20 from '../assets/Insta Work/ig19.jpg'
 
 export default function InstaPhotos() {
-    const images = [ig1, ig2, ig3, ig4,ig5, ig6, ig7, ig8, ig9, ig10, ig11, ig12, ig13, ig14, ig15, ig16, ig17, ig18];
+    const images = [ig1, ig2, ig3, ig4,ig5, ig6, ig7, ig8, ig9, ig10, ig11, ig12, ig13, ig14, ig15, ig16, ig17, ig18, ig19, ig20];
   return (
     <div className='InstaPhotos'>
       <div className="ig-heading">High-Impact Creatives for High-Value Properties</div>

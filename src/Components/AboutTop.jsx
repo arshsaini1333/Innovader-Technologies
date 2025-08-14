@@ -48,7 +48,7 @@ To deliver high-quality, conversion-focused leads for the real estate industry t
         </div>
         <div className="abt-card">
           <div className="abtc-logo"><RemoveRedEyeIcon sx={{ fontSize: 50}}/></div>
-          <div className="abtc-name">Our Vission</div>
+          <div className="abtc-name">Our Vision</div>
           <div className="abtc-desc">To become India’s most trusted digital growth partner for real estate. We aim to change the way property is marketed online — with smart targeting, measurable ROI, and campaigns that actually work.</div>
         </div>
         

@@ -79,7 +79,9 @@ export default function ReelInsta() {
 
   return (
     <div className="ReelInsta">
-     
+      <div className="reel-head">Crafting Reels That Get Results</div>
+      <div className="reel-sub">Because it’s not just about views – it’s about connection, engagement, and conversions</div>
+
      <div className="reels">
      {videos.map((video, index) => (
         <VideoPlayer
