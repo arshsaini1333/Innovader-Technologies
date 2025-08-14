@@ -11,7 +11,9 @@ import ThumbsUpDownIcon from '@mui/icons-material/ThumbsUpDown';
 import TrackChangesIcon from '@mui/icons-material/TrackChanges';
 import ArtTrackIcon from '@mui/icons-material/ArtTrack';
 import ServiceForm from '../../Components/ServiceForm'
- 
+import animation from '../../assets/gads.json'
+import Lottie from "lottie-react";
+
 import googlead from '../../assets/googlead2.png'
 import realE from '../../assets/googleads.png'
 export default function GoogleAds({popUp}) {
@@ -45,7 +47,8 @@ export default function GoogleAds({popUp}) {
             <button onClick={()=>popUp()} className='lgwc-cta'><span>Run My Google Ads Now</span></button>
           </div>
           <div className="lgwc-image">
-            <img src={realE} alt="" />
+          <Lottie animationData={animation} loop={true} />
+
           </div>
         </div>
         </div>

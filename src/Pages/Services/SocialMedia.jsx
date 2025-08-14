@@ -7,6 +7,9 @@ import OfflinePinIcon from '@mui/icons-material/OfflinePin';
 import ScaleIcon from '@mui/icons-material/Scale';
 import IosShareIcon from '@mui/icons-material/IosShare';
 import ServiceForm from '../../Components/ServiceForm'
+import animation from '../../assets/ssm.json'
+import Lottie from "lottie-react";
+
 
 export default function SocialMedia({popUp}) {
   return (
@@ -25,17 +28,21 @@ export default function SocialMedia({popUp}) {
         <div className="ssm-part2">
           <div className="spt-header">Social Media Marketing That Delivers Real Results</div>
           <div className="spt-content">
-             <div className="spt-left">Social media marketing is more than just posting content — it’s the heartbeat of modern brand growth and lead generation. At <strong>Innovader</strong>, we transform your social media presence into a powerful business growth engine. <br />  <br />
+             <div className="spt-left"><p>
+             Social media marketing is more than just posting content — it’s the heartbeat of modern brand growth and lead generation. At <strong>Innovader</strong>, we transform your social media presence into a powerful business growth engine. <br />  <br />
 
-             Our social media marketing services go beyond likes and shares. We create attention-grabbing content, run high-converting ad campaigns, and tell your brand’s story in a way that makes your audience stop scrolling and start engaging. <br /> <br />
+Our social media marketing services go beyond likes and shares. We create attention-grabbing content, run high-converting ad campaigns, and tell your brand’s story in a way that makes your audience stop scrolling and start engaging. <br /> <br />
 
-             From Instagram Reels that spark conversations to LinkedIn lead generation ads that drive sales, we custom-build every campaign to match your business goals and target audience. Our approach combines creative design, persuasive copywriting, and advanced analytics to ensure every post has a clear purpose — whether it’s boosting brand awareness, generating leads, or building loyal communities.
+From Instagram Reels that spark conversations to LinkedIn lead generation ads that drive sales, we custom-build every campaign to match your business goals and target audience. Our approach combines creative design, persuasive copywriting, and advanced analytics to ensure every post has a clear purpose — whether it’s boosting brand awareness, generating leads, or building loyal communities.
+             </p>
+             <button style={{marginTop:22}} className='spt-cta' onClick={()=>popUp()}>Boost My Social Presence</button>
             </div>
              <div className="spt-image">
-              <img src={ssm1} alt="" />
+             <Lottie animationData={animation} loop={true} />
+
              </div>
           </div>
-          <button className='spt-cta' onClick={()=>popUp()}>Boost My Social Presence</button>
+         
         </div>
 
 

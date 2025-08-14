@@ -3,7 +3,7 @@
 }
 
 .MetaAds .ssm-content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -17,6 +17,19 @@
     margin-top: 1.5rem;
     /* justify-content: space-around; */
     flex-direction: row;
+}
+
+.MetaAds .ssm-header {
+    font-size: 2.8rem;
+    width: 95%;
+}
+
+.MetaAds .ssm-sub-header {
+    font-size: 1.2rem;
+}
+
+.MetaAds .spt-image {
+    width: 25%;
 }
 
 .MetaAds .sswi-header {

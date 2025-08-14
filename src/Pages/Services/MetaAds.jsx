@@ -1,12 +1,14 @@
 import React from 'react'
 import '../../public/SocialMedia.css'
 import '../../public/MetaAds.css'
-import ssm1 from '../../assets/metaads.png'
 import ssm from '../../assets/Metacard.png'
 import ShareIcon from '@mui/icons-material/Share';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import RealEstateAgentIcon from '@mui/icons-material/RealEstateAgent';
 import TipsAndUpdatesIcon from '@mui/icons-material/TipsAndUpdates';
+import animation from '../../assets/meta.json'
+import Lottie from "lottie-react";
+
 import ServiceForm from '../../Components/ServiceForm'
 
 export default function MetaAds({popUp}) {
@@ -34,7 +36,8 @@ export default function MetaAds({popUp}) {
              <button className='spt-cta' style={{marginTop: 22}} onClick={()=>popUp()}>Get My Meta Ads Proposal</button>
             </div>
              <div className="spt-image">
-              <img src={ssm1} alt="" />
+             <Lottie animationData={animation} loop={true} />
+
              </div>
           </div>
          

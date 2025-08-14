@@ -11,6 +11,8 @@ import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import AssuredWorkloadIcon from '@mui/icons-material/AssuredWorkload';
 import ServiceForm from '../../Components/ServiceForm'
+import animation from '../../assets/leadgen.json'
+import Lottie from "lottie-react";
 
 import realE from '../../assets/realE.jpeg'
 export default function LeadGeneration({popUp}) {
@@ -19,7 +21,7 @@ export default function LeadGeneration({popUp}) {
       <div className="lead-gen-top">
         <div className="lg-head-content">
         <div className="lg-header">Real Estate Lead Generation Agency That Delivers Verified Buyer Leads</div>
-        <div className="lg-sub-header">Get high-intent, pre-qualified buyer inquiries—delivered straight to your inbox or CRM every single day.</div>
+        {/* <div className="lg-sub-header">Get high-intent, pre-qualified buyer inquiries—delivered straight to your inbox or CRM every single day.</div> */}
         <button onClick={()=>popUp()} className='lead-gen-cta'>Book A Free Consultation Today</button>
         </div>
       </div>
@@ -37,7 +39,8 @@ export default function LeadGeneration({popUp}) {
             <button onClick={()=>popUp()} className='lgwc-cta'><WifiCallingIcon/><span>Get Your Lead Generation Proposal</span></button>
           </div>
           <div className="lgwc-image">
-            <img src={realE} alt="" />
+          <Lottie animationData={animation} loop={true} />
+
           </div>
         </div>
         </div>

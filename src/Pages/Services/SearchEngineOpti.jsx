@@ -11,6 +11,8 @@ import LinkIcon from "@mui/icons-material/Link";
 import PlaceIcon from "@mui/icons-material/Place";
 import InsightsIcon from "@mui/icons-material/Insights";
 import ServiceForm from '../../Components/ServiceForm'
+import animation from '../../assets/seo.json'
+import Lottie from "lottie-react";
 
 export default function SearchEngineOpti({popUp}) {
 
@@ -44,7 +46,8 @@ export default function SearchEngineOpti({popUp}) {
              <button className='spt-cta' onClick={()=>popUp()}>Start My SEO Growth Journey</button>
             </div>
              <div className="spt-image">
-              <img src={ssm1} alt="" />
+             <Lottie animationData={animation} loop={true} />
+
              </div>
           </div>
           

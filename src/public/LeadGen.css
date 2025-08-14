@@ -43,6 +43,11 @@
     overflow: hidden;
 }
 
+.lead-gen-top .lg-header {
+    width: 95%;
+    font-size: 2.5rem;
+}
+
 .lg-sub-header {
     font-size: 1.6rem;
     font-weight: bold;
