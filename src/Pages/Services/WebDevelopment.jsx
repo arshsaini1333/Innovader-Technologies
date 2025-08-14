@@ -11,6 +11,8 @@ import EmergencyIcon from '@mui/icons-material/Emergency';
 import websol from '../../assets/websol4.png'
 import ServiceForm from '../../Components/ServiceForm'
 
+import Timeline from '../../Components/TimeLine';
+
 export default function WebDevelopment({popUp}) {
   return (
     <div className='WebsiteDesign'>
@@ -93,6 +95,7 @@ export default function WebDevelopment({popUp}) {
             <img src={websol} alt="" />
           </div>
         </div>
+        <Timeline/>
 <ServiceForm/>
     </div>
   )
