@@ -8,23 +8,37 @@ import WantToSee from '../Components/WantToSee.jsx'
 import HomeTestimonials from '../Components/HomeTestimonials.jsx'
 import WhyInnovader from '../Components/WhyInnovader.jsx'
 import Results from '../Components/Results.jsx'
-import Footer from '../Components/Footer.jsx'
 import OurServices from '../Components/OurServices.jsx'
 import ServiceForm from '../Components/ServiceForm.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
-
-import ContactHome from '../Components/ContactHome.jsx'
-import AOS from 'aos';
+import Lottie from "lottie-react";
+import animationData from '../assets/loader.json'
 import 'aos/dist/aos.css';
 
  
 export default function Home({popUp})
 {
+    const [loading, setLoading] = useState(true);
+
     useEffect(() => {
-        AOS.init({ duration: 1000 });
+        const timer = setTimeout(() => {
+          setLoading(false);
+        }, 2000); // Show animation for 2 seconds
+        return () => clearTimeout(timer);
       }, []);
     
+      if (loading) {
+        return (
+          <div className="preloader">
+            <Lottie
+              animationData={animationData}
+              loop={true} /* change to false to play once */
+              className="preloader-animation"
+            />
+          </div>
+        );
+      }
     
     return (
         <>

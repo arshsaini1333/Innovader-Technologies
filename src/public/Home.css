@@ -137,6 +137,32 @@
     min-height: 5rem;
 }
 
+.preloader {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #ffffff;
+    /* match your site background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.preloader-animation {
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.home-content {
+    padding: 20px;
+    text-align: center;
+}
+
 @media screen and (max-width:1000px) {
     .Home {
         flex-direction: column;
