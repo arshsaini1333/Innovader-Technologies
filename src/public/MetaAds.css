@@ -64,6 +64,22 @@
     /* text-align: center; */
 }
 
+.MetaAds li strong {
+    display: flex;
+    /* justify-self: center; */
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    span {
+        margin-left: 0 !important;
+        width: fit-content;
+        /* padding: 0.5rem; */
+        width: 1rem;
+        font-size: 1rem;
+        width: 7% !important;
+    }
+}
+
 .MetaAds .sswi-image {
     width: 25%;
 }
@@ -73,6 +89,9 @@
 }
 
 @media screen and (max-width:800px) {
+    .MetaAds li span {
+        margin-left: 2rem;
+    }
     .MetaAds .ssm-header {
         font-size: 1.3rem;
     }
@@ -84,6 +103,7 @@
     }
     .MetaAds .ssm-wi {
         flex-direction: column;
+        padding: 0;
     }
     .MetaAds .sswi-left {
         width: 100%;

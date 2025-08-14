@@ -36,17 +36,6 @@
     transition: width 0.5s ease-in-out;
 }
 
-.css-rizt0-MuiTypography-root {
-    font-size: 1.2rem !important;
-    font-weight: 500 !important;
-    color: #333 !important;
-}
-
-.css-1ygil4i-MuiToolbar-root {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
 .nav-links:hover::after {
     width: 100%;
 }
@@ -172,10 +161,6 @@ img {
     display: block;
 }
 
-.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
-    font-size: 1rem !important;
-}
-
 
 /* Add to your existing Navbar.css file */
 
@@ -202,19 +187,6 @@ img {
     padding: 8px !important;
 }
 
-.css-1uent87-MuiButtonBase-root-MuiButton-root {
-    color: #333 !important;
-    font-family: "Merriweather", serif !important;
-    /* border: 2px solid green !important; */
-    background-color: white !important;
-    font-size: 1rem !important;
-}
-
-.css-4bx69l-MuiButtonBase-root-MuiListItemButton-root {
-    width: 100% !important;
-    /* margin-left: 1rem !important; */
-}
-
 .css-rizt0-MuiTypography-root {
     font-family: "Merriweather", serif !important;
 }
@@ -227,9 +199,15 @@ img {
     .banner {
         display: none !important;
     }
-    .css-1ygil4i-MuiToolbar-root {
-        height: fit-content !important;
-        min-height: 0 !important;
+}
+
+@media screen and (max-width:1100px) {
+    .nav-link-container {
+        width: 100%;
+        gap: 0.5rem;
+    }
+    .letsTalk {
+        margin-left: 1rem;
     }
 }
 
@@ -256,21 +234,15 @@ img {
         gap: 0rem !important;
     }
     .letsTalk {
-        margin-left: 0rem;
+        margin-left: 1rem;
         margin-top: 1rem !important;
     }
-    .css-1ygil4i-MuiToolbar-root {
-        padding-left: 1rem !important;
-        padding-right: 0 !important;
+    .li-container {
+        justify-content: flex-start;
     }
-}
-
-@media screen and (max-width:1100px) {
-    .nav-link-container {
-        width: 100%;
-        gap: 0.5rem;
-    }
-    .letsTalk {
-        margin-left: 1rem;
+    .MuiButtonBase-root {
+        align-self: flex-start;
+        justify-self: flex-start;
+        font-family: "Merriweather", serif;
     }
 }

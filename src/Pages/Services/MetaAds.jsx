@@ -75,19 +75,19 @@ export default function MetaAds({popUp}) {
                 
                <div className="sswi-list">
                <ul>
-                   <li>📌 <strong>Facebook & Instagram Lead Generation Campaigns</strong> <br />
+                   <li> <strong> <span>📌 {' '} </span>Facebook & Instagram Lead Generation Campaigns</strong> <br />
                    <span>Get high-quality property leads directly in your inbox.</span></li>
-                   <li>📍 <strong>Location & Project-Based Targeting</strong> <br />
+                   <li> <strong> <span>📍</span>Location & Project-Based Targeting</strong> <br />
                   <span> Reach only people in your target city, area, or near your project site.</span></li>
-                   <li>🎥 <strong>High-Impact Video & Reel Ads</strong> <br />
+                   <li> <strong><span>🎥</span>High-Impact Video & Reel Ads</strong> <br />
                     <span>Engaging property walkthroughs and lifestyle videos that sell the dream.</span></li>
-                   <li>🖼 <strong>Carousel & Collection Ads</strong> <br />
+                   <li> <strong><span>🖼</span>Carousel & Collection Ads</strong> <br />
                     <span>Showcase multiple units, floor plans, or offers in a single ad.</span></li>
-                   <li>💬 <strong>Instant Lead Capture with Meta Forms</strong> <br /> 
+                   <li> <strong><span>💬</span>Instant Lead Capture with Meta Forms</strong> <br /> 
                    <span>Collect lead details without making them leave Facebook or Instagram.</span></li>
-                   <li>⚡ <strong>Retargeting Campaigns</strong> <br /> 
+                   <li> <strong><span>⚡</span>Retargeting Campaigns</strong> <br /> 
                    <span>Re-engage people who have visited your website or interacted with your ads.</span></li>
-                   <li>📊 <strong>Weekly Campaign Performance Reports</strong> <br /> 
+                   <li> <strong><span>📊</span>Weekly Campaign Performance Reports</strong> <br /> 
                    <span>Transparent reporting to track ROI and optimize campaigns.</span></li>
                </ul>
                </div>

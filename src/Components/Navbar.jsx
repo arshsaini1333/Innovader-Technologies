@@ -59,10 +59,11 @@ export default function Navbar(props) {
 
   const open = Boolean(anchorEl);
 
+  // Mobile Drawer
   const drawer = (
-    <Box sx={{ textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'left' }}>
       <Typography variant="h6" sx={{ my: 2 }} className='banner-d'>
-        <img src={logo} alt="Innovader Technologies Logo"/>
+        <img src={logo} alt="Innovader Technologies Logo" />
         <p>Innovader Technologies</p>
       </Typography>
       <Divider />
@@ -70,21 +71,41 @@ export default function Navbar(props) {
         {navItems.map((item) => (
           item === 'Our Services' ? (
             <React.Fragment key={item}>
-              <ListItemButton onClick={handleServicesClick}>
-                <ListItemText primary={item} className='nav-links' style={{opacity: 1, color: '#333'}}/>
+              {/* Our Services main item */}
+              <ListItemButton
+                onClick={handleServicesClick}
+                sx={{ justifyContent: "flex-start", pl: 2 }}
+              >
+                <ListItemText
+                  primary={item}
+                  primaryTypographyProps={{
+                    fontSize: "1rem",
+                    fontWeight: 500,
+                  }}
+                  className='nav-links'
+                  style={{ opacity: 1, color: '#333' }}
+                />
                 {servicesOpen ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
+
+              {/* Submenu */}
               <Collapse in={servicesOpen} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding>
                   {services.map((service) => (
                     <ListItemButton
                       key={service.name}
-                      sx={{ pl: 4 }}
+                      sx={{ pl: 4, justifyContent: "flex-start" }}
                       component={NavLink}
                       to={service.path}
                       onClick={handleDrawerToggle}
                     >
-                      <ListItemText primary={service.name} />
+                      <ListItemText
+                        primary={service.name}
+                        primaryTypographyProps={{
+                          fontSize: "1rem",
+                          fontWeight: 500,
+                        }}
+                      />
                     </ListItemButton>
                   ))}
                 </List>
@@ -96,14 +117,25 @@ export default function Navbar(props) {
                 component={NavLink}
                 to={paths[item]}
                 onClick={handleDrawerToggle}
+                sx={{ justifyContent: "flex-start", pl: 2 }}
               >
-                <ListItemText className='nav-links' primary={item} />
+                <ListItemText
+                  className='nav-links'
+                  primary={item}
+                  primaryTypographyProps={{
+                    fontSize: "1rem",
+                    fontWeight: 500,
+                  }}
+                />
               </ListItemButton>
             </ListItem>
           )
         ))}
-        <NavLink to='/contact' className='letsTalk' onClick={handleDrawerToggle} ><HomeIcon/><span>Bring Me Qualified Buyers
-</span></NavLink>
+        {/* Special CTA link */}
+        <NavLink to='/contact' className='letsTalk' onClick={handleDrawerToggle}>
+          <HomeIcon />
+          <span>Bring Me Qualified Buyers</span>
+        </NavLink>
       </List>
     </Box>
   );
@@ -125,7 +157,7 @@ export default function Navbar(props) {
             sx={{
               mr: 2,
               display: { xs: 'block', sm: 'block', md: 'block' },
-              '@media (min-width:1101px)': { display: 'none' } // hide above 1100px
+              '@media (min-width:1101px)': { display: 'none' }
             }}
           >
             <MenuIcon />
@@ -142,7 +174,7 @@ export default function Navbar(props) {
             }}
             className='banner'
           >
-            <img src={logo} alt="Innovader Technologies Logo"/>
+            <img src={logo} alt="Innovader Technologies Logo" />
             <p>Innovader Technologies</p>
           </Typography>
 
@@ -173,8 +205,7 @@ export default function Navbar(props) {
                 </NavLink>
               )
             ))}
-            <NavLink to='/contact' className='letsTalk'><HomeIcon/><span>Bring Me Qualified Buyers
-</span></NavLink>
+            <NavLink to='/contact' className='letsTalk'><HomeIcon /><span>Bring Me Qualified Buyers</span></NavLink>
           </Box>
         </Toolbar>
       </AppBar>
@@ -200,7 +231,10 @@ export default function Navbar(props) {
                     onClick={handlePopoverClose}
                   >
                     <ListItemText
-                      primaryTypographyProps={{ fontSize: '1rem', fontFamily: '"Merriweather", sans-serif' }}
+                      primaryTypographyProps={{
+                        fontSize: '1rem',
+                        fontFamily: '"Merriweather", sans-serif'
+                      }}
                       primary={service.name}
                     />
                   </ListItemButton>
