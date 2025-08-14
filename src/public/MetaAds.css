@@ -91,4 +91,10 @@
     .MetaAds .sswi-image {
         width: 100%;
     }
+    .MetaAds .spt-image {
+        width: 100%;
+    }
+    .MetaAds .spt-cta {
+        display: block;
+    }
 }
