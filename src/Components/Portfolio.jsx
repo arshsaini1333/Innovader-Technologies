@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../public/ThreeDCarousel.css';
 
-
 // new images
 import w1 from '../assets/work/w1.png'
 import w2 from '../assets/work/w2.png'
@@ -16,56 +15,47 @@ import w10 from '../assets/work/w10.png'
 import w11 from '../assets/work/w1.png'
 
 const ThreeDCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(1);
-  const [isAutoplay, setIsAutoplay] = useState(true);
-  const intervalRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11];
 
-  
+  // Autoplay
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
+    }, 2000); // 2 seconds per slide
 
+    return () => clearInterval(interval); // cleanup on unmount
+  }, [images.length]);
 
-  const images = [w1, w2, w3, w4, w5, w6, w7, w8, w9, w10, w11]
-  // Autoplay functionality
- 
-
-  // Pause autoplay when user interacts
-  
   const getCardPosition = (index) => {
     const diff = index - currentIndex;
     if (diff === 0) return 'center';
-    if (diff === 1 || diff === -(cards.length - 1)) return 'right';
-    if (diff === -1 || diff === cards.length - 1) return 'left';
+    if (diff === 1 || diff === -(images.length - 1)) return 'right';
+    if (diff === -1 || diff === images.length - 1) return 'left';
     return 'hidden';
   };
 
   return (
-    <div 
-      className="carousel-container"
-      
-    >
+    <div className="carousel-container">
       <div className="carousel-wrapper">
-        {/* Carousel Container */}
         <div className="carousel-stage">
-          {images.map((card, index) => {
+          {images.map((img, index) => {
             const position = getCardPosition(index);
             return (
               <div
-                key={card.id}
+                key={index}
                 className={`carousel-card ${position}`}
               >
                 <div className="card-inner">
-                <div className="card-emoji">
-                      <img src={card} alt={card.title} />
+                  <div className="card-emoji">
+                    <img src={img} alt="portfolio" />
                   </div>
-                  
-                  {/* Shine Effect */}
                   <div className={`card-shine ${position === 'center' ? 'active' : ''}`} />
                 </div>
               </div>
             );
           })}
         </div>
-
-        
       </div>
     </div>
   );
