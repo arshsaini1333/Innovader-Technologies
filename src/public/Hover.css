@@ -1,0 +1,75 @@
+.web-s-c {
+    width: 40%;
+    /* Card width */
+    height: 30rem;
+    /* Visible height */
+    overflow: hidden;
+    /* Hide rest of image */
+    /* border-radius: 10px; */
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+.scroll-img {
+    width: 100%;
+    transform: translateY(0);
+    /* Start at top */
+    transition: transform 14s linear;
+    /* Smooth both ways */
+}
+
+.web-s-c:hover .scroll-img {
+    transform: translateY(calc(-100% + 200px));
+    /* Move up by imageHeight - visibleHeight */
+}
+
+.wsc-header {
+    width: 90%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1b70ef;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.wsc-subhead {
+    width: 90%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.webs-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    /* gap: 2rem; */
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width:800px) {
+    .webs-cards {
+        flex-direction: column;
+        margin: 1rem auto;
+    }
+    .web-s-c {
+        width: 100%;
+        height: 20rem;
+    }
+    .wsc-header {
+        font-size: 1.6rem;
+    }
+    .wsc-subhead {
+        font-size: 1.1rem;
+    }
+    .websiteHover {
+        margin-top: -2rem;
+    }
+}

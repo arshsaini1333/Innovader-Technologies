@@ -9,8 +9,8 @@ import HomeTestimonials from '../Components/HomeTestimonials.jsx'
 import WhyInnovader from '../Components/WhyInnovader.jsx'
 import Results from '../Components/Results.jsx'
 import Footer from '../Components/Footer.jsx'
-import EnquiryPopup from '../Components/EnquiryPopup.jsx'
 import OurServices from '../Components/OurServices.jsx'
+import ServiceForm from '../Components/ServiceForm.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
 
@@ -39,7 +39,8 @@ export default function Home({popUp})
         <WantToSee/>     
         <Results popUp={popUp}/> 
         <HomeTestimonials popUp={popUp}/>
-        <ContactHome/>
+        {/* <ContactHome/> */}
+        <ServiceForm/>
         {/* <Footer/> */}
         </div>
         

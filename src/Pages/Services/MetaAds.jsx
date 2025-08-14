@@ -31,13 +31,13 @@ export default function MetaAds({popUp}) {
              From eye-catching carousel ads to Instagram Reels that showcase your projects, we create campaigns that stop the scroll and spark action. Our targeting strategies focus on location, demographics, interests, and buyer intent, so your ads are seen only by potential property buyers and investors.  <br /> <br />
 
              We handle everything — creative design, ad copy, budget optimization, lead capture, and performance tracking — so you can focus on closing deals while we bring in the leads.
-
+             <button className='spt-cta' style={{marginTop: 22}} onClick={()=>popUp()}>Get My Meta Ads Proposal</button>
             </div>
              <div className="spt-image">
               <img src={ssm1} alt="" />
              </div>
           </div>
-          <button className='spt-cta' onClick={()=>popUp()}>Get My Meta Ads Proposal</button>
+         
         </div>
 
             {/* Third Part */}

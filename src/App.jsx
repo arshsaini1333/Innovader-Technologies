@@ -17,6 +17,7 @@ import SocialMedia from './Pages/Services/SocialMedia';
 import EnquiryPopup from './Components/EnquiryPopup';
 import Thankyou from './Pages/Thankyou'
 import ScrollToTop from './Components/ScrollToTop';
+import Footer from './Components/Footer';
 function App() { 
   const [isShow, setShow] = useState(false);
   function popUp()
@@ -58,6 +59,7 @@ function App() {
         <EnquiryPopup isOpen={isShow} onClose={popUp} />
         <ScrollToTop/>
       {/* </BrowserRouter> */}
+      <Footer/>
     </>
   )
 }

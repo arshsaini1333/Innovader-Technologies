@@ -3,6 +3,8 @@
     color: white;
     font-family: Arial, sans-serif;
     padding: 2rem;
+    position: relative;
+    z-index: 106;
 }
 
 .footer-top {

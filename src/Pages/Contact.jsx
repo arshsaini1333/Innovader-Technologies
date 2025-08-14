@@ -2,7 +2,6 @@ import '../public/Contact.css'
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { useRef } from 'react';
-import Footer from '../Components/Footer';
 export default function Contact(){
     // Form HAndlish
 
@@ -92,13 +91,13 @@ export default function Contact(){
 
 <div class="contact-wrapper" >
     <div class=" contact-info ">
-        {/* <div class="info-box">
+        <div class="info-box">
             <i class="fas fa-home icon "></i>
             <div>
                 <h4>Address</h4>
                 <p><strong>INNOVADER TECHNOLOGIES</strong> <br/> E-93/1, SOUTH, near SUMAN CHOWK <br/> Block D, Chhatarpur Extension, Chhatarpur <br/> New Delhi, Delhi 110074</p>
             </div>
-        </div> */}
+        </div>
 
         <div class="info-box ">
         <i class="fa-solid fa-hourglass-start icon "></i>
@@ -192,7 +191,7 @@ export default function Contact(){
     </div>
 </div>
     
-    <Footer/>
+   
     </>
 
     )

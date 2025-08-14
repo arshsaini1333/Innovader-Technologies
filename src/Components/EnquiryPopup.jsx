@@ -1,7 +1,7 @@
 import React, { use, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import "../public/EnquiryPopup.css";
-import img from "../assets/realE.jpeg";
+import img from "../assets/eform.png";
 
 const EnquiryPopup = ({ isOpen, onClose }) => {
   const scriptURL = 'https://script.google.com/macros/s/AKfycby1xh4MAihX9iGdnxXKewSv4Sb770HwSTNwPO7htKyQDkE88JZuNSBykFEvwkJcHX6_/exec';
