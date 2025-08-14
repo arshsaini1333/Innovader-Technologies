@@ -149,7 +149,7 @@ export default function Navbar(props) {
         <Toolbar>
           {/* Hamburger Icon */}
           <IconButton
-            color="inherit"
+            color="#1b70ef"
             aria-label="open drawer"
             edge="start"
             className='d-btn'

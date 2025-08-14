@@ -13,7 +13,7 @@ import ServiceForm from '../Components/ServiceForm.jsx'
 import { useState } from 'react'
 import { useEffect } from 'react';
 import Lottie from "lottie-react";
-import animationData from '../assets/loader.json'
+import animationData from '../assets/loader2.json'
 import 'aos/dist/aos.css';
 
  

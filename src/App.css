@@ -8,6 +8,7 @@
 button {
     cursor: pointer;
     opacity: 0.8;
+    font-family: "Merriweather", serif !important;
     transition: all 0.3 ease-in;
 }
 

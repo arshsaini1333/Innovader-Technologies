@@ -145,8 +145,12 @@ img {
     border-radius: 4px;
 }
 
+.Navbar .nav-link-container button {
+    color: black !important;
+}
+
 .css-1c69r7k {
-    font-family: "Merriweather", serif;
+    font-family: "Merriweather", serif !important;
 }
 
 .dropdown-menu .dropdown-item {
