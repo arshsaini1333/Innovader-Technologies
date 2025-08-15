@@ -94,7 +94,7 @@ const EnquiryPopup = ({ isOpen, onClose }) => {
               required
             />
             <button type="submit" id="contactSubmit" className={submitting ? 'blur-bt' : ''}>
-              {submitting ? "Submitting..." : "Submit Enquiry"}
+              {submitting ? "Submitting..." : "Submit"}
             </button>
             
           </form>
