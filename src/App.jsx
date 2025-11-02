@@ -18,6 +18,7 @@ import EnquiryPopup from './Components/EnquiryPopup';
 import Thankyou from './Pages/Thankyou'
 import ScrollToTop from './Components/ScrollToTop';
 import WhatsAppButton from './Components/Whatsaap';
+import RealEstateVideoMarketingBlog from './Pages/Blogs/VideoMarketing';
 import Footer from './Components/Footer';
 function App() { 
   const [isShow, setShow] = useState(false);
@@ -55,7 +56,9 @@ function App() {
           <Route path='/services/meta-ads' element={<MetaAds popUp={popUp}/>} />
           <Route path='/services/google-ads' element={<GoogleAds popUp={popUp}/>} />
           <Route path="/services/seo" element={<SearchEngineOpti popUp={popUp}/>} />
+          <Route path="/blog/video-marketing" element={<RealEstateVideoMarketingBlog/>} />
           <Route path="thankyou" element={<Thankyou />} />
+         
         </Routes>
         <EnquiryPopup isOpen={isShow} onClose={popUp} />
         <ScrollToTop/>

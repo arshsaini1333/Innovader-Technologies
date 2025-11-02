@@ -1,7 +1,7 @@
 .whatsapp-button {
     position: fixed;
     bottom: 20px;
-    left: 20px;
+    right: 30px;
     background-color: #25d366;
     color: white;
     border-radius: 50%;

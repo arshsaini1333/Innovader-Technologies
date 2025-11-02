@@ -1,0 +1,249 @@
+/* Base Styles (Desktop/Tablet) */
+
+
+/* Blog Post Top */
+
+.top-component {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    /* justify-content: center; */
+    /* height: 100vh; */
+}
+
+.top-component-image {
+    /* padding-top: 6rem; */
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../assets/Blog/vdo-market.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.top-component-image::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.927);
+    z-index: 2;
+}
+
+.abtimage {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    height: 100%;
+}
+
+.top-head {
+    margin-top: 6rem;
+    z-index: 15 !important;
+    font-size: 5.5rem;
+    /* text-transform: uppercase; */
+    /* color: #1b70ef; */
+    color: white;
+    font-weight: bolder;
+}
+
+
+/* Blog Post Middle  */
+
+.blog-post {
+    width: 80%;
+    margin: 3rem auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* Header Styling */
+
+.blog-header h1 {
+    font-size: 2.6em;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.intro-text {
+    font-size: 1.15em;
+    font-weight: 300;
+    color: #495057;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-header hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 123, 255, 0.75), rgba(0, 0, 0, 0));
+    margin: 35px 0;
+}
+
+
+/* Section Styling */
+
+.section h2 {
+    font-size: 2em;
+    color: #0056b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+
+/* Paragraphs in sections */
+
+.section p {
+    margin-bottom: 1em;
+    color: #343a40;
+}
+
+
+/* List Styling */
+
+.services-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 25px;
+}
+
+.services-list li {
+    background-color: #e6f2ff;
+    margin-bottom: 12px;
+    padding: 18px;
+    border-left: 6px solid #007bff;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.05em;
+}
+
+.services-list li:hover {
+    background-color: #cce0ff;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.services-list strong {
+    color: #0056b3;
+}
+
+
+/* Footer and CTA */
+
+.blog-footer h2 {
+    font-size: 2em;
+    color: #0056b3;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+}
+
+.call-to-action {
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-size: 1.3em;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.call-to-action:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.call-to-action strong {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+
+/* --- Mobile Responsiveness (Max-width 600px) --- */
+
+@media (max-width: 600px) {
+    .blog-post {
+        margin: 20px 10px;
+        /* Reduce margin on smaller screens */
+        padding: 15px;
+        /* Reduce padding for more content space */
+        border-radius: 0;
+        /* Optional: Make corners less rounded on full-screen mobile view */
+        box-shadow: none;
+        /* Optional: Remove box shadow on mobile */
+    }
+    /* Smaller Font Sizes */
+    .blog-header h1 {
+        font-size: 1.8em;
+        /* H1 reduced for mobile */
+        margin-top: 10px;
+    }
+    .intro-text,
+    .section p {
+        font-size: 1em;
+        /* Main text size reduced */
+        text-align: left;
+        /* Align intro text left for better readability */
+    }
+    .section h2,
+    .blog-footer h2 {
+        font-size: 1.4em;
+        /* H2 reduced for mobile */
+        margin-top: 25px;
+        margin-bottom: 15px;
+        border-bottom-width: 1px;
+        /* Thinner line */
+    }
+    /* List Item Adjustments */
+    .services-list li {
+        padding: 12px;
+        /* Less padding */
+        font-size: 0.95em;
+        /* List item text slightly smaller */
+        border-left-width: 4px;
+        /* Thinner border */
+    }
+    .services-list li:hover {
+        transform: none;
+        /* Disable transform/lift on hover for touch devices */
+        box-shadow: none;
+    }
+    /* CTA Adjustments */
+    .call-to-action {
+        padding: 20px;
+        /* Less padding in CTA */
+        font-size: 1.1em;
+        /* CTA text size reduced */
+        margin-top: 30px;
+    }
+    .call-to-action strong {
+        font-size: 1em;
+    }
+    .call-to-action:hover {
+        transform: none;
+        /* Disable transform on hover for touch devices */
+    }
+}
