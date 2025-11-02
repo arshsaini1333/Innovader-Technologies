@@ -24,7 +24,8 @@ export default function Navbar(props) {
     'About': '/about',
     'Our Work': '/our-work',
     'Our Services': '/our-services',
-    'Contact': '/contact'
+    'Contact': '/contact',
+    'Blogs' : '/blog/video-marketing'
   };
 
   const services = [
