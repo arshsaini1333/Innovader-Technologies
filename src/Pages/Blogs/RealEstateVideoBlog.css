@@ -185,8 +185,12 @@
 /* --- Mobile Responsiveness (Max-width 600px) --- */
 
 @media (max-width: 600px) {
+    .top-head {
+        font-size: 2.5rem;
+    }
     .blog-post {
-        margin: 20px 10px;
+        width: 100%;
+        margin: 20px auto;
         /* Reduce margin on smaller screens */
         padding: 15px;
         /* Reduce padding for more content space */
