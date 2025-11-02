@@ -16,7 +16,7 @@ import '../public/Navbar.css';
 
 export default function Navbar(props) {
   const drawerWidth = 320;
-  const navItems = ['Home', 'About', 'Our Work', 'Our Services', 'Contact'];
+  const navItems = ['Home', 'About', 'Our Work', 'Our Services', 'Contact', 'Our Blogs'];
   const { window } = props;
 
   const paths = {
@@ -25,7 +25,7 @@ export default function Navbar(props) {
     'Our Work': '/our-work',
     'Our Services': '/our-services',
     'Contact': '/contact',
-    'Blogs' : '/blog/video-marketing'
+    'Our Blogs' : '/blog/video-marketing'
   };
 
   const services = [
