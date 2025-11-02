@@ -22,6 +22,8 @@ import RealEstateVideoMarketingBlog from './Pages/Blogs/VideoMarketing';
 import Footer from './Components/Footer';
 function App() { 
   const [isShow, setShow] = useState(false);
+
+
   function popUp()
   {
       setShow(!isShow);
@@ -56,7 +58,7 @@ function App() {
           <Route path='/services/meta-ads' element={<MetaAds popUp={popUp}/>} />
           <Route path='/services/google-ads' element={<GoogleAds popUp={popUp}/>} />
           <Route path="/services/seo" element={<SearchEngineOpti popUp={popUp}/>} />
-          <Route path="/blog/video-marketing" element={<RealEstateVideoMarketingBlog/>} />
+          <Route path="/blog/video-marketing" element={<RealEstateVideoMarketingBlog popUp={popUp}/>} />
           <Route path="thankyou" element={<Thankyou />} />
          
         </Routes>

@@ -4,9 +4,9 @@ import './RealEstateVideoBlog.css';
 import TopComponent from './TopComponent'; 
 // You'll need this import in your actual React setup
 
-const RealEstateVideoMarketingBlog = () => {
+export default function RealEstateVideoMarketingBlog({popUp}){
 
-  const heading = "The Power of Video Marketing in Real Estate"
+  const heading = "The Power of  video marketing in Real Estate"
   return (
     <>
     <TopComponent heading={heading}/>
@@ -14,21 +14,21 @@ const RealEstateVideoMarketingBlog = () => {
       
       <header className="blog-header">
         <p className="intro-text">
-          In the last few years, **video marketing** has become one of the most powerful tools in digital marketing for real estate. After the COVID-19 era, buyer engagement and client retention have shifted dramatically from static images to engaging video ads.
+          In the last few years,   <strong>video marketing</strong>  has become one of the most powerful tools in digital marketing for real estate. After the COVID-19 era, buyer engagement and client retention have shifted dramatically from static images to engaging video ads.
         </p>
         <p className="intro-text">
-          Today’s property buyers want to see the **real experience** before making any decision — and videos give them exactly that.
+          Today’s property buyers want to see the  real experience  before making any decision — and videos give them exactly that.
         </p>
         <hr />
       </header>
 
       <section className="section">
-        <h2>Why Video Marketing Matters in Real Estate 🏡</h2>
+        <h2>Why  <strong>video marketing</strong> Matters in Real Estate 🏡</h2>
         <p>
-          Traditional images can only showcase so much. But real estate videos allow potential buyers to visualize every corner, understand the property layout, and **connect emotionally** with the space.
+          Traditional images can only showcase so much. But real estate videos allow potential buyers to visualize every corner, understand the property layout, and  connect emotionally  with the space.
         </p>
         <p>
-          When buyers receive **80% of property information upfront** through detailed property videos, they are more likely to click, inquire, and schedule site visits.
+          When buyers receive  80% of property information upfront  through detailed property videos, they are more likely to click, inquire, and schedule site visits.
         </p>
         <p>
           This directly improves ad conversion rates, lead quality, and overall engagement.
@@ -38,7 +38,7 @@ const RealEstateVideoMarketingBlog = () => {
       <section className="section our-approach">
         <h2>Our Approach to High-Performance Real Estate Videos ✨</h2>
         <p>
-          At **Innovader Technologies**, we create impactful real estate video marketing campaigns that bring your properties to life and generate real buyer interest.
+          At  Innovader Technologies , we create impactful real estate  <strong>video marketing</strong> campaigns that bring your properties to life and generate real buyer interest.
         </p>
         <p>Our services include:</p>
         <ul className="services-list">
@@ -56,16 +56,16 @@ const RealEstateVideoMarketingBlog = () => {
           </li>
         </ul>
         <p>
-          These formats not only highlight every detail of your property but also **build trust** with potential buyers — resulting in serious inquiries and faster conversions.
+          These formats not only highlight every detail of your property but also  build trust  with potential buyers — resulting in serious inquiries and faster conversions.
         </p>
       </section>
 
       <footer className="blog-footer">
         <h2>Conclusion</h2>
         <p>
-          In 2025, video marketing for real estate isn’t optional — **it’s essential**. With our expert video marketing strategies, your properties gain maximum visibility, attract the right audience, and convert faster than ever.
+          In 2025,  <strong>video marketing</strong> for real estate isn’t optional —  it’s essential . With our expert  <strong>video marketing</strong> strategies, your properties gain maximum visibility, attract the right audience, and convert faster than ever.
         </p>
-        <div className="call-to-action">
+        <div className="call-to-action" onClick={()=>popUp()}>
           <p>
             <strong>📩 Ready to boost your property sales?</strong> Let Innovader Technologies craft a stunning video strategy that drives real results for your real estate brand.
           </p>
@@ -76,5 +76,4 @@ const RealEstateVideoMarketingBlog = () => {
   );
 };
 
-export default RealEstateVideoMarketingBlog;
- // Uncomment in a real file
+
